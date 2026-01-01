@@ -45,4 +45,4 @@ Feedback, Verbesserungsvorschläge oder eigene Aufgaben?
 ---
 
 **Stand:** Januar 2026  
-**Kontakt:** [deine E-Mail oder Website]
+**Kontakt:** david.halser(at)me.com
