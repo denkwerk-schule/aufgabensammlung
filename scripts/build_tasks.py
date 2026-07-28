@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """
-Scannt aufgaben/**/metadata.yml und generiert tasks.json fuer die index.html.
-Erzeugt ausserdem, falls noch nicht vorhanden, ein vorschau.jpg (Seite 1 des PDFs)
-pro Aufgabe.
+Scannt aufgaben/**/metadata.yml und lernfelder/**/metadata.yml und generiert
+tasks.json bzw. lernfelder.json fuer die index.html. Erzeugt ausserdem, falls
+noch nicht vorhanden, Vorschaubilder (Seite 1 als Kartenvorschau, alle Seiten
+als Vollansicht fuer die Lightbox) pro Aufgabe/Lernfeld.
 
 Wird lokal oder automatisch via GitHub Action (.github/workflows/build-tasks.yml)
-ausgefuehrt. Neue Aufgaben werden dadurch ohne manuelles Anpassen der index.html
-auf der Website sichtbar - es braucht lediglich einen Ordner mit aufgabe.pdf,
-aufgabe.md und metadata.yml unterhalb von aufgaben/<fach>/<aufgabe>/.
+ausgefuehrt. Neue Aufgaben/Lernfelder werden dadurch ohne manuelles Anpassen der
+index.html auf der Website sichtbar - es braucht lediglich einen Ordner mit
+aufgabe.pdf, aufgabe.md und metadata.yml unterhalb von
+aufgaben/<fach>/<name>/ bzw. lernfelder/<fach>/<name>/.
 
 Nutzung:
     python3 scripts/build_tasks.py
@@ -24,8 +26,6 @@ except ImportError:
     sys.exit(1)
 
 ROOT = Path(__file__).resolve().parent.parent
-AUFGABEN_DIR = ROOT / "aufgaben"
-OUTPUT_FILE = ROOT / "tasks.json"
 
 
 def parse_zeitbedarf_minuten(zeitbedarf: str) -> int:
@@ -57,10 +57,10 @@ def pdf_page_count(pdf: Path) -> int:
     return 1
 
 
-def ensure_page_preview(task_dir: Path, page: int, filename: str) -> str | None:
+def ensure_page_preview(item_dir: Path, page: int, filename: str) -> str | None:
     """Erzeugt ein Vorschaubild fuer eine einzelne PDF-Seite, falls noch nicht vorhanden."""
-    preview = task_dir / filename
-    pdf = task_dir / "aufgabe.pdf"
+    preview = item_dir / filename
+    pdf = item_dir / "aufgabe.pdf"
 
     if preview.exists():
         return filename
@@ -78,13 +78,13 @@ def ensure_page_preview(task_dir: Path, page: int, filename: str) -> str | None:
                 "-scale-to-x", "1400",
                 "-scale-to-y", "-1",
                 str(pdf),
-                str(task_dir / preview.stem),
+                str(item_dir / preview.stem),
             ],
             check=True,
             capture_output=True,
         )
         # pdftoppm haengt bei -f/-l eine Seitennummer an: <stem>-<page>.jpg
-        generated = task_dir / f"{preview.stem}-{page}.jpg"
+        generated = item_dir / f"{preview.stem}-{page}.jpg"
         if generated.exists():
             generated.rename(preview)
             print(f"  Vorschau erzeugt: {preview.relative_to(ROOT)}")
@@ -95,14 +95,14 @@ def ensure_page_preview(task_dir: Path, page: int, filename: str) -> str | None:
     return None
 
 
-def ensure_previews(task_dir: Path) -> list[str]:
+def ensure_previews(item_dir: Path) -> list[str]:
     """Erzeugt Kartenvorschau (vorschau.jpg, Seite 1) sowie Vollansichten fuer
     alle Seiten des PDFs (vorschau-seite-1.jpg, vorschau-seite-2.jpg, ...) fuer
     die grosse Klick-Vorschau. Gibt die Liste der Vollansicht-Dateinamen zurueck."""
-    pdf = task_dir / "aufgabe.pdf"
+    pdf = item_dir / "aufgabe.pdf"
 
     # kleine Kartenvorschau (bleibt wie bisher: vorschau.jpg)
-    ensure_page_preview(task_dir, 1, "vorschau.jpg")
+    ensure_page_preview(item_dir, 1, "vorschau.jpg")
 
     if not pdf.exists():
         return []
@@ -110,25 +110,32 @@ def ensure_previews(task_dir: Path) -> list[str]:
     pages = pdf_page_count(pdf)
     seiten = []
     for page in range(1, pages + 1):
-        filename = ensure_page_preview(task_dir, page, f"vorschau-seite-{page}.jpg")
+        filename = ensure_page_preview(item_dir, page, f"vorschau-seite-{page}.jpg")
         if filename:
             seiten.append(filename)
     return seiten
 
 
-def main():
-    tasks = []
+def load_metadata(metadata_file: Path):
+    raw = metadata_file.read_text(encoding="utf-8")
+    # Dateien sind im YAML-Frontmatter-Format: --- ... ---
+    parts = raw.split("---")
+    body = parts[1] if len(parts) >= 3 else raw
+    return yaml.safe_load(body)
 
-    for metadata_file in sorted(AUFGABEN_DIR.glob("*/*/metadata.yml")):
-        task_dir = metadata_file.parent
-        rel_path = task_dir.relative_to(ROOT).as_posix()
+
+def build_collection(source_dir: Path, output_file: Path, extra_fields=None):
+    """Scannt source_dir/*/*/metadata.yml und schreibt output_file.
+    extra_fields: optionale Liste zusaetzlicher YAML-Keys, die 1:1 uebernommen werden."""
+    extra_fields = extra_fields or []
+    items = []
+
+    for metadata_file in sorted(source_dir.glob("*/*/metadata.yml")):
+        item_dir = metadata_file.parent
+        rel_path = item_dir.relative_to(ROOT).as_posix()
 
         try:
-            raw = metadata_file.read_text(encoding="utf-8")
-            # Dateien sind im YAML-Frontmatter-Format: --- ... ---
-            parts = raw.split("---")
-            body = parts[1] if len(parts) >= 3 else raw
-            data = yaml.safe_load(body)
+            data = load_metadata(metadata_file)
         except yaml.YAMLError as e:
             print(f"Fehler beim Parsen von {metadata_file}: {e}", file=sys.stderr)
             continue
@@ -141,19 +148,18 @@ def main():
         if isinstance(fach, str):
             fach = [fach]
 
-        pdf_exists = (task_dir / "aufgabe.pdf").exists()
-        md_exists = (task_dir / "aufgabe.md").exists()
+        pdf_exists = (item_dir / "aufgabe.pdf").exists()
+        md_exists = (item_dir / "aufgabe.md").exists()
 
         if not pdf_exists:
             print(f"Warnung: {rel_path} hat kein aufgabe.pdf.", file=sys.stderr)
 
-        preview_exists = (task_dir / "vorschau.jpg").exists()
-        seiten = ensure_previews(task_dir)
-        preview = "vorschau.jpg" if (preview_exists or (task_dir / "vorschau.jpg").exists()) else None
+        seiten = ensure_previews(item_dir)
+        preview = "vorschau.jpg" if (item_dir / "vorschau.jpg").exists() else None
 
-        task = {
-            "id": task_dir.name,
-            "titel": data.get("titel", task_dir.name),
+        item = {
+            "id": item_dir.name,
+            "titel": data.get("titel", item_dir.name),
             "fach": fach,
             "stufe": data.get("stufe", ""),
             "niveau": data.get("niveau", ""),
@@ -170,15 +176,35 @@ def main():
             "vorschau": f"{rel_path}/{preview}" if preview else None,
             "vorschauSeiten": [f"{rel_path}/{s}" for s in seiten],
         }
-        tasks.append(task)
+        for key in extra_fields:
+            item[key] = data.get(key, [] if key in ("moeglichkeiten", "anschluss") else "")
 
-    tasks.sort(key=lambda t: t["titel"])
+        items.append(item)
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(tasks, f, ensure_ascii=False, indent=2)
+    items.sort(key=lambda t: t["titel"])
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(items, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
-    print(f"\n{len(tasks)} Aufgabe(n) in {OUTPUT_FILE.relative_to(ROOT)} geschrieben.")
+    print(f"{len(items)} Eintrag/Eintraege in {output_file.relative_to(ROOT)} geschrieben.")
+    return items
+
+
+def main():
+    print("=== Aufgaben ===")
+    build_collection(ROOT / "aufgaben", ROOT / "tasks.json")
+
+    print("\n=== Lernfelder ===")
+    lernfelder_dir = ROOT / "lernfelder"
+    if lernfelder_dir.exists():
+        build_collection(
+            lernfelder_dir,
+            ROOT / "lernfelder.json",
+            extra_fields=["typ", "moeglichkeiten", "anschluss"],
+        )
+    else:
+        print("(kein lernfelder/-Ordner vorhanden, uebersprungen)")
 
 
 if __name__ == "__main__":

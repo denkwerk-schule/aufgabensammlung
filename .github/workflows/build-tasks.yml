@@ -1,15 +1,17 @@
-name: tasks.json automatisch aktualisieren
+name: tasks.json / lernfelder.json automatisch aktualisieren
 
-# Laeuft immer, wenn sich etwas im aufgaben/-Ordner aendert (neue Aufgabe,
-# geaenderte metadata.yml, etc.) und schreibt tasks.json + fehlende
-# Vorschaubilder neu. Dadurch muss die index.html nie manuell angepasst
-# werden - neue Aufgaben werden automatisch erkannt.
+# Laeuft immer, wenn sich etwas im aufgaben/- oder lernfelder/-Ordner aendert
+# (neue Aufgabe, neues Lernfeld, geaenderte metadata.yml, etc.) und schreibt
+# tasks.json / lernfelder.json + fehlende Vorschaubilder neu. Dadurch muss die
+# index.html nie manuell angepasst werden - neue Inhalte werden automatisch
+# erkannt.
 
 on:
   push:
     branches: [main]
     paths:
       - "aufgaben/**"
+      - "lernfelder/**"
       - "scripts/build_tasks.py"
   workflow_dispatch: {}
 
@@ -34,17 +36,17 @@ jobs:
           sudo apt-get update -y
           sudo apt-get install -y poppler-utils
 
-      - name: tasks.json und Vorschaubilder generieren
+      - name: tasks.json, lernfelder.json und Vorschaubilder generieren
         run: python3 scripts/build_tasks.py
 
       - name: Aenderungen committen
         run: |
           git config user.name "denkwerk-bot"
           git config user.email "actions@github.com"
-          git add tasks.json aufgaben/**/vorschau.jpg
+          git add tasks.json lernfelder.json aufgaben lernfelder
           if git diff --cached --quiet; then
             echo "Keine Aenderungen."
           else
-            git commit -m "tasks.json automatisch aktualisiert [skip ci]"
+            git commit -m "tasks.json / lernfelder.json automatisch aktualisiert [skip ci]"
             git push
           fi

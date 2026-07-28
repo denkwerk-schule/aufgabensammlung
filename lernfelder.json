@@ -1,0 +1,43 @@
+[
+  {
+    "id": "hoerspiele",
+    "titel": "Hörspiele",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Hörspiel",
+      "Hörverstehen",
+      "Skript schreiben",
+      "Audioproduktion"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Hörspiel ist wie Film schauen - einfach ohne Bild. Vom Philip-Maloney-Hörspiel bis zum eigenen Live-Hörspiel.",
+    "pfad": "lernfelder/deutsch/hoerspiele",
+    "pdf": "lernfelder/deutsch/hoerspiele/aufgabe.pdf",
+    "md": "lernfelder/deutsch/hoerspiele/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/hoerspiele/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/hoerspiele/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/hoerspiele/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Filmkritik schreiben",
+      "Eigene Maloney-Folge produzieren",
+      "Eigenes Hörspiel zu zweit oder zu dritt entwerfen",
+      "Live-Hörspiel vortragen"
+    ],
+    "anschluss": [
+      "Podcast",
+      "Drama",
+      "Romeo und Julia"
+    ]
+  }
+]

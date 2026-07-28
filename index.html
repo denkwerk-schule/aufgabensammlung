@@ -16,6 +16,9 @@
     --ink: #1d1d1f;
     --ink-soft: #48484a;
     --ink-faint: #86868b;
+    --blue-500:#3b82f6;
+    --blue-600:#2563eb;
+    --blue-700:#1d4ed8;
   }
 
   *{box-sizing:border-box;}
@@ -379,6 +382,67 @@
     flex-wrap:wrap;
   }
   .lightbox-actions .btn{flex:none;padding:11px 20px;}
+
+  /* ---------- Sections ---------- */
+  .section-heading{
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    margin:52px 4px 22px;
+  }
+  .section-heading h2{
+    font-size:1.5rem;
+    font-weight:800;
+    letter-spacing:-0.01em;
+    margin:0;
+    color:var(--ink);
+  }
+  .section-heading p{
+    margin:0;
+    font-size:0.88rem;
+    color:var(--ink-faint);
+  }
+  .section-heading.first{margin-top:0;}
+
+  /* ---------- Lernfeld-Karten (eigener Akzent: blau statt amber) ---------- */
+  .card.lernfeld-card .card-thumb{background:linear-gradient(135deg,#93c5fd,#60a5fa);}
+  .chip-lf{
+    background:rgba(59,130,246,0.14);
+    color:var(--blue-700);
+  }
+  .btn-lf-primary{
+    color:var(--blue-700);
+    border-color:rgba(37,99,235,0.24);
+  }
+  .btn-lf-primary:hover{
+    background:rgba(59,130,246,0.12);
+    border-color:rgba(37,99,235,0.42);
+  }
+  .moeglichkeiten-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-bottom:14px;
+  }
+  .moeglichkeiten-list span{
+    font-size:0.74rem;
+    font-weight:600;
+    padding:4px 10px;
+    border-radius:999px;
+    background:rgba(0,0,0,0.045);
+    color:var(--ink-soft);
+  }
+  .anschluss-row{
+    margin-top:4px;
+    padding-top:14px;
+    border-top:1px solid rgba(0,0,0,0.06);
+    font-size:0.78rem;
+    color:var(--ink-faint);
+  }
+  .anschluss-row strong{
+    color:var(--ink-soft);
+    font-weight:650;
+  }
 </style>
 </head>
 <body>
@@ -392,6 +456,11 @@
   </header>
 
   <div class="wrap">
+
+    <div class="section-heading first">
+      <h2>🎯 Denkaufgaben</h2>
+      <p>Offene Einzelaufgaben mit fixer Fragestellung</p>
+    </div>
 
     <!-- Filter -->
     <div class="glass filter-panel">
@@ -440,6 +509,15 @@
       Falls du diese Seite lokal per Doppelklick geöffnet hast: das funktioniert wegen Browser-Sicherheits&shy;beschränkungen nicht - bitte über die GitHub-Pages-URL aufrufen oder einen lokalen Server starten.
     </div>
 
+    <div id="lernfeldSection" style="display:none;">
+      <div class="section-heading">
+        <h2>🧭 Lernfelder</h2>
+        <p>Offene Themenfelder für den eigenständigen Kompetenzaufbau</p>
+      </div>
+
+      <div id="lernfeldGrid" class="grid"></div>
+    </div>
+
   </div>
 
   <footer>
@@ -469,6 +547,7 @@
   };
 
   let allTasks = [];
+  let allLernfelder = [];
 
   const ICON_DOWNLOAD = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4.5 21h15"/></svg>';
   const ICON_DOC = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>';
@@ -539,8 +618,56 @@
       </div>`;
   }
 
-  function openLightbox(id) {
-    const task = allTasks.find(t => t.id === id);
+  async function loadLernfelder() {
+    try {
+      const res = await fetch('lernfelder.json', { cache: 'no-store' });
+      if (!res.ok) return;
+      allLernfelder = await res.json();
+      if (!allLernfelder.length) return;
+      document.getElementById('lernfeldSection').style.display = 'block';
+      document.getElementById('lernfeldGrid').innerHTML = allLernfelder.map(lernfeldCardHtml).join('');
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  function lernfeldCardHtml(lf) {
+    const icon = FACH_ICONS[(lf.fach || [])[0]] || '🧭';
+    const thumb = lf.vorschau
+      ? `<img src="${lf.vorschau}" alt="Vorschau: ${lf.titel}" loading="lazy">`
+      : `<div class="fallback-icon">${icon}</div>`;
+
+    const chips = (lf.fach || []).map(f => `<span class="chip chip-lf">${f}</span>`).join('');
+    const moeglichkeiten = (lf.moeglichkeiten || []).map(m => `<span>${m}</span>`).join('');
+    const anschluss = (lf.anschluss || []).join(' · ');
+
+    const pdfBtn = lf.pdf
+      ? `<a class="btn btn-lf-primary" href="${lf.pdf}" download>${ICON_DOWNLOAD} PDF</a>`
+      : '';
+    const mdBtn = lf.md
+      ? `<a class="btn btn-secondary" href="${lf.md}" download>${ICON_DOC} Markdown</a>`
+      : '';
+
+    return `
+      <div class="card lernfeld-card glass">
+        <div class="card-thumb" onclick="openLightbox('${lf.id}', true)" title="Grosse Vorschau ansehen">${thumb}</div>
+        <div class="card-body">
+          <div class="chips">${chips}</div>
+          <h3>${lf.titel}</h3>
+          <p class="desc">${lf.beschreibung || ''}</p>
+          <div class="moeglichkeiten-list">${moeglichkeiten}</div>
+          <div class="meta">
+            <span>📚 ${lf.stufe || '-'}</span>
+            <span>⏱️ ${lf.zeitbedarf || '-'}</span>
+          </div>
+          <div class="card-actions">${pdfBtn}${mdBtn}</div>
+          ${anschluss ? `<div class="anschluss-row"><strong>Anschluss:</strong> ${anschluss}</div>` : ''}
+        </div>
+      </div>`;
+  }
+
+  function openLightbox(id, isLernfeld) {
+    const task = (isLernfeld ? allLernfelder : allTasks).find(t => t.id === id);
     if (!task) return;
 
     document.getElementById('lightboxTitel').textContent = task.titel;
@@ -619,6 +746,7 @@
   document.getElementById('filterZeit').addEventListener('change', applyFilters);
 
   loadTasks();
+  loadLernfelder();
 </script>
 
 </body>
