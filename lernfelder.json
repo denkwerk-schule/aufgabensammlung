@@ -1,5 +1,46 @@
 [
   {
+    "id": "die-hoehle-der-loewen",
+    "titel": "Die Höhle der Löwen",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Erfindungen",
+      "Konzept schreiben",
+      "Recherche",
+      "Präsentation"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Erfinde etwas, das es noch nicht gibt und überzeuge als Gründer die Investoren in der Höhle der Löwen.",
+    "pfad": "lernfelder/deutsch/die-hoehle-der-loewen",
+    "pdf": "lernfelder/deutsch/die-hoehle-der-loewen/aufgabe.pdf",
+    "md": "lernfelder/deutsch/die-hoehle-der-loewen/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/die-hoehle-der-loewen/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/die-hoehle-der-loewen/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/die-hoehle-der-loewen/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Beste Erfindung der Menschheit",
+      "Frühere Erfindungen im Alltag",
+      "Skurrilste Erfindungen",
+      "Aktuelle Forschung und Erfinder-Biografie"
+    ],
+    "anschluss": [
+      "Influencer",
+      "Die Welt in 20 Jahren",
+      "Extreme Leistungen"
+    ]
+  },
+  {
     "id": "hoerspiele",
     "titel": "Hörspiele",
     "fach": [
@@ -38,6 +79,341 @@
       "Podcast",
       "Drama",
       "Romeo und Julia"
+    ]
+  },
+  {
+    "id": "influencer",
+    "titel": "Influencer",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Influencer",
+      "Social Media",
+      "Debattieren",
+      "Leserbrief"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Werde selbst zum Influencer und/oder durchschaue, was an der Influencer-Welt fake ist.",
+    "pfad": "lernfelder/deutsch/influencer",
+    "pdf": "lernfelder/deutsch/influencer/aufgabe.pdf",
+    "md": "lernfelder/deutsch/influencer/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/influencer/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/influencer/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/influencer/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Werbeaktion-Präsentation",
+      "Debatte über Fake-Follower",
+      "Selbstversuch als Influencer",
+      "Interview mit einer Influencerin"
+    ],
+    "anschluss": [
+      "Podcast",
+      "Zeitungen und Co.",
+      "Schräge Typen",
+      "Tagebuch und Co."
+    ]
+  },
+  {
+    "id": "kreatives-schreiben",
+    "titel": "Kreatives Schreiben",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Kreatives Schreiben",
+      "Gedichtformen",
+      "Schreibspiele"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Schreiben ohne zu denken, mit Herz und Verstand - vom Akrostichon bis zum Elfchen.",
+    "pfad": "lernfelder/deutsch/kreatives-schreiben",
+    "pdf": "lernfelder/deutsch/kreatives-schreiben/aufgabe.pdf",
+    "md": "lernfelder/deutsch/kreatives-schreiben/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/kreatives-schreiben/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/kreatives-schreiben/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/kreatives-schreiben/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Akrostichon",
+      "Schreibmaschine mit defekten Buchstaben",
+      "Geschichte mit einem Anfangsbuchstaben",
+      "ABC-Geschichte",
+      "Elfchen-Gedicht",
+      "Schreib-Kick-Automat"
+    ],
+    "anschluss": [
+      "Leichte Sprache",
+      "Ver-dichtete Worte",
+      "Zeitung und Co."
+    ]
+  },
+  {
+    "id": "leichte-sprache",
+    "titel": "Leichte Sprache",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Leichte Sprache",
+      "Barrierefreiheit",
+      "Textvergleich",
+      "Referat"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Wie leicht ist leichte Sprache und wie tönt ein Text in leichter Sprache? Finde es heraus.",
+    "pfad": "lernfelder/deutsch/leichte-sprache",
+    "pdf": "lernfelder/deutsch/leichte-sprache/aufgabe.pdf",
+    "md": "lernfelder/deutsch/leichte-sprache/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/leichte-sprache/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/leichte-sprache/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/leichte-sprache/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Entstehung der leichten Sprache",
+      "Einen eigenen Text in leichte Sprache setzen",
+      "Leichte Sprache in der Schweiz",
+      "Elternbrief in leichter Sprache",
+      "Umfrage zur Bekanntheit",
+      "Referat zur leichten Sprache"
+    ],
+    "anschluss": [
+      "Modul Rechtschreibung",
+      "Modul Grammatik",
+      "Modul Zeitung",
+      "Lernfeld Leben mit einer Behinderung"
+    ]
+  },
+  {
+    "id": "podcast-und-co",
+    "titel": "Podcast und Co.",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Podcast",
+      "Radio",
+      "Audioproduktion",
+      "GarageBand"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Radio hören wann und wo ich will - oder gleich selber einen Podcast machen?",
+    "pfad": "lernfelder/deutsch/podcast-und-co",
+    "pdf": "lernfelder/deutsch/podcast-und-co/aufgabe.pdf",
+    "md": "lernfelder/deutsch/podcast-und-co/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/podcast-und-co/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/podcast-und-co/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/podcast-und-co/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Anleitung zum Podcast laden",
+      "Format-Analyse (100 Sekunden Wissen / Schreckmümpfeli)",
+      "Eigenen Podcast erstellen mit GarageBand"
+    ],
+    "anschluss": [
+      "Lernfeld Zeitung",
+      "Lernfeld Hörspiel",
+      "Lernfeld Tagebuch, Blog & Co."
+    ]
+  },
+  {
+    "id": "schlaue-koepfe",
+    "titel": "Schlaue Köpfe",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Porträt schreiben",
+      "Biografie",
+      "Interview",
+      "Recherche"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Leben zwischen Genie und Wahnsinn - das Porträtieren besonderer Persönlichkeiten wie John Nash oder Alan Turing.",
+    "pfad": "lernfelder/deutsch/schlaue-koepfe",
+    "pdf": "lernfelder/deutsch/schlaue-koepfe/aufgabe.pdf",
+    "md": "lernfelder/deutsch/schlaue-koepfe/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/schlaue-koepfe/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/schlaue-koepfe/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/schlaue-koepfe/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Von der Recherche zum Porträt",
+      "Vom Interview zum Porträt",
+      "Von der Biografie zum Porträt",
+      "Fotografen zu Porträtbildern befragen"
+    ],
+    "anschluss": [
+      "Schräge Typen",
+      "Kurzgeschichten",
+      "Leben mit Behinderung"
+    ]
+  },
+  {
+    "id": "schraege-typen",
+    "titel": "Schräge Typen",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Aussergewöhnliche Biografien",
+      "Hörverstehen",
+      "Minimalismus",
+      "Recherche"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Aussergewöhnliche Biografien jenseits der Norm - von Cédric Waldburger bis Toni el Suisso.",
+    "pfad": "lernfelder/deutsch/schraege-typen",
+    "pdf": "lernfelder/deutsch/schraege-typen/aufgabe.pdf",
+    "md": "lernfelder/deutsch/schraege-typen/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/schraege-typen/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/schraege-typen/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/schraege-typen/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Höre-Empfehlung zu Cédric Waldburger",
+      "Minimalismus-Reflexion",
+      "Dossier über Toni el Suisso",
+      "Eigene Recherche zu einem schrägen Typen"
+    ],
+    "anschluss": [
+      "Kluge Köpfe",
+      "Leben mit einer Behinderung",
+      "Extreme Leistungen"
+    ]
+  },
+  {
+    "id": "traeume",
+    "titel": "Träume",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Träume",
+      "Lyrik",
+      "Kurzgeschichte",
+      "Kunst"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Träume und Gedanken kennen keine Schranken - von Kafka über Dalí bis zu Martin Luther King.",
+    "pfad": "lernfelder/deutsch/traeume",
+    "pdf": "lernfelder/deutsch/traeume/aufgabe.pdf",
+    "md": "lernfelder/deutsch/traeume/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/traeume/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/traeume/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/traeume/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Träume aufschreiben",
+      "Traumforschung recherchieren",
+      "Dali-Ausstellung",
+      "Traumgedicht",
+      "Sprichwörter und Redewendungen rund um Träume",
+      "Mein grösster Traum",
+      "Martin Luther Kings Traum"
+    ],
+    "anschluss": [
+      "Lyrik"
+    ]
+  },
+  {
+    "id": "ver-dichtete-worte",
+    "titel": "Ver-dichtete Worte",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "individuell (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Lyrik",
+      "Gedichtanalyse",
+      "Versmass",
+      "Stilmittel"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Kurze Texte, feine Sprache - das ist Lyrik. Von der Ballade bis zum Stille-Dialog.",
+    "pfad": "lernfelder/deutsch/ver-dichtete-worte",
+    "pdf": "lernfelder/deutsch/ver-dichtete-worte/aufgabe.pdf",
+    "md": "lernfelder/deutsch/ver-dichtete-worte/aufgabe.md",
+    "vorschau": "lernfelder/deutsch/ver-dichtete-worte/vorschau.jpg",
+    "vorschauSeiten": [
+      "lernfelder/deutsch/ver-dichtete-worte/vorschau-seite-1.jpg",
+      "lernfelder/deutsch/ver-dichtete-worte/vorschau-seite-2.jpg"
+    ],
+    "typ": "lernfeld",
+    "moeglichkeiten": [
+      "Ein altes Gedicht modernisieren",
+      "Gedichte verschiedener Epochen vergleichen",
+      "Versfüsse bestimmen",
+      "Reimschemata und Stilfiguren",
+      "Lieblingsgedicht analysieren",
+      "Stille-Dialog zu \"Mondnacht\""
+    ],
+    "anschluss": [
+      "Lernfeld Podcast",
+      "Lernfeld Drama",
+      "Lernfeld Kreatives Schreiben"
     ]
   }
 ]
