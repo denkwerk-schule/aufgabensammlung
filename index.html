@@ -1,223 +1,488 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lernaufgaben-Sammlung | denkwerk.schule</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        .task-card {
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .task-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lernaufgaben-Sammlung | denkwerk.schule</title>
+<meta name="description" content="Offene, natürlich differenzierte Denkaufgaben für den Unterricht | denkwerk.schule">
+<style>
+  :root{
+    --amber-500:#f59e0b;
+    --amber-600:#d97706;
+    --amber-700:#b45309;
+    --glass-bg: rgba(255,255,255,0.55);
+    --glass-bg-strong: rgba(255,255,255,0.72);
+    --glass-border: rgba(255,255,255,0.6);
+    --ink: #1d1d1f;
+    --ink-soft: #48484a;
+    --ink-faint: #86868b;
+  }
+
+  *{box-sizing:border-box;}
+
+  html,body{
+    margin:0;
+    padding:0;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+    color:var(--ink);
+    min-height:100%;
+  }
+
+  body{
+    background:
+      radial-gradient(circle at 12% 8%, rgba(255,175,64,0.55), transparent 40%),
+      radial-gradient(circle at 85% 5%, rgba(255,107,157,0.4), transparent 45%),
+      radial-gradient(circle at 90% 60%, rgba(96,165,250,0.35), transparent 45%),
+      radial-gradient(circle at 8% 70%, rgba(167,139,250,0.35), transparent 45%),
+      radial-gradient(circle at 50% 95%, rgba(52,211,153,0.3), transparent 45%),
+      linear-gradient(180deg, #f4f2ef 0%, #eef0f3 100%);
+    background-attachment:fixed;
+    min-height:100vh;
+  }
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  /* ---------- Header ---------- */
+  header.hero{
+    padding:72px 0 40px;
+    text-align:center;
+  }
+  header.hero h1{
+    font-size:clamp(2.2rem,5vw,3.4rem);
+    font-weight:800;
+    letter-spacing:-0.02em;
+    margin:0 0 12px;
+    background:linear-gradient(90deg,#b45309,#ea580c 35%,#db2777 70%,#7c3aed);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  header.hero p{
+    font-size:1.05rem;
+    color:var(--ink-soft);
+    margin:0;
+  }
+  header.hero .brand{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    margin-top:18px;
+    padding:8px 16px;
+    border-radius:999px;
+    background:var(--glass-bg);
+    border:1px solid var(--glass-border);
+    backdrop-filter:blur(20px) saturate(160%);
+    -webkit-backdrop-filter:blur(20px) saturate(160%);
+    font-size:0.85rem;
+    color:var(--ink-soft);
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+  }
+
+  /* ---------- Glass panel base ---------- */
+  .glass{
+    background:var(--glass-bg);
+    border:1px solid var(--glass-border);
+    backdrop-filter:blur(24px) saturate(180%);
+    -webkit-backdrop-filter:blur(24px) saturate(180%);
+    box-shadow:0 8px 32px rgba(31,38,135,0.08), inset 0 1px 0 rgba(255,255,255,0.5);
+    border-radius:24px;
+  }
+
+  /* ---------- Filter bar ---------- */
+  .filter-panel{
+    padding:22px 26px;
+    margin-bottom:36px;
+    position:sticky;
+    top:16px;
+    z-index:20;
+  }
+  .filter-title{
+    font-weight:700;
+    font-size:0.95rem;
+    color:var(--ink-soft);
+    margin:0 0 14px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .filter-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:14px;
+    align-items:end;
+  }
+  .filter-field label{
+    display:block;
+    font-size:0.75rem;
+    font-weight:600;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    margin-bottom:6px;
+  }
+  select, .btn-reset{
+    width:100%;
+    appearance:none;
+    -webkit-appearance:none;
+    border:1px solid rgba(0,0,0,0.08);
+    border-radius:14px;
+    padding:10px 34px 10px 14px;
+    font-size:0.92rem;
+    font-family:inherit;
+    color:var(--ink);
+    background:rgba(255,255,255,0.6) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2386868b'/%3E%3C/svg%3E") no-repeat right 14px center;
+    cursor:pointer;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  select:hover, select:focus{
+    outline:none;
+    border-color:var(--amber-500);
+    box-shadow:0 0 0 4px rgba(245,158,11,0.15);
+  }
+  .btn-reset{
+    background:rgba(0,0,0,0.05);
+    cursor:pointer;
+    text-align:center;
+    font-weight:600;
+    transition:background .15s, transform .1s;
+  }
+  .btn-reset:hover{background:rgba(0,0,0,0.09);}
+  .btn-reset:active{transform:scale(0.97);}
+
+  .result-count{
+    margin:-16px 0 24px 4px;
+    font-size:0.85rem;
+    color:var(--ink-faint);
+  }
+
+  /* ---------- Cards grid ---------- */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    gap:26px;
+    padding-bottom:60px;
+  }
+
+  .card{
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s;
+  }
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(31,38,135,0.16), inset 0 1px 0 rgba(255,255,255,0.6);
+  }
+
+  .card-thumb{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/10.5;
+    overflow:hidden;
+    background:linear-gradient(135deg,#fcd34d,#fb923c);
+  }
+  .card-thumb img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top;
+    display:block;
+    transition:transform .4s ease;
+  }
+  .card:hover .card-thumb img{transform:scale(1.05);}
+  .card-thumb .fallback-icon{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:3rem;
+  }
+
+  .card-body{
+    padding:22px 22px 20px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+  }
+
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+  .chip{
+    font-size:0.72rem;
+    font-weight:700;
+    padding:4px 11px;
+    border-radius:999px;
+    background:rgba(245,158,11,0.14);
+    color:var(--amber-700);
+    letter-spacing:0.01em;
+  }
+
+  .card h3{
+    font-size:1.25rem;
+    font-weight:750;
+    letter-spacing:-0.01em;
+    margin:0 0 8px;
+    color:var(--ink);
+  }
+  .card p.desc{
+    font-size:0.92rem;
+    line-height:1.5;
+    color:var(--ink-soft);
+    margin:0 0 16px;
+    flex:1;
+  }
+
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    font-size:0.8rem;
+    color:var(--ink-faint);
+    margin-bottom:18px;
+  }
+  .meta span{display:inline-flex;align-items:center;gap:5px;}
+
+  .card-actions{display:flex;gap:10px;}
+  .btn{
+    flex:1;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    padding:10px 14px;
+    border-radius:14px;
+    font-size:0.85rem;
+    font-weight:650;
+    text-decoration:none;
+    transition:transform .12s, box-shadow .12s, background .12s;
+    border:1px solid transparent;
+  }
+  .btn:active{transform:scale(0.96);}
+  .btn-primary{
+    background:linear-gradient(135deg,var(--amber-500),var(--amber-600));
+    color:white;
+    box-shadow:0 6px 16px rgba(217,119,6,0.35);
+  }
+  .btn-primary:hover{box-shadow:0 8px 22px rgba(217,119,6,0.45);}
+  .btn-secondary{
+    background:rgba(0,0,0,0.05);
+    color:var(--ink);
+  }
+  .btn-secondary:hover{background:rgba(0,0,0,0.09);}
+
+  /* ---------- Empty / loading state ---------- */
+  .state-panel{
+    padding:60px 24px;
+    text-align:center;
+    color:var(--ink-soft);
+  }
+  .state-panel .emoji{font-size:2.4rem;display:block;margin-bottom:14px;}
+
+  /* ---------- Footer ---------- */
+  footer{
+    padding:40px 0 50px;
+    text-align:center;
+    color:var(--ink-faint);
+    font-size:0.85rem;
+  }
+  footer a{color:var(--amber-700);text-decoration:none;font-weight:600;}
+  footer a:hover{text-decoration:underline;}
+
+  @media (max-width:640px){
+    .filter-panel{position:static;}
+    header.hero{padding:48px 0 28px;}
+  }
+</style>
 </head>
-<body class="bg-gray-50">
-    
-    <!-- Header -->
-    <header class="bg-amber-700 text-white py-8 mb-8">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <h1 class="text-4xl font-bold mb-2">Sammlung mit offenen Aufgaben</h1>
-            <p class="text-amber-200">Offene, natürlich differenzierte Denkaufgaben | denkwerk.schule</p>
-        </div>
-    </header>
+<body>
 
-    <div class="container mx-auto px-4 max-w-6xl">
-        
-        <!-- Filter -->
-        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
-            <h2 class="text-xl font-semibold mb-4">🔍 Filter</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Fach</label>
-                    <select id="filterFach" class="w-full border border-gray-300 rounded-lg px-3 py-2">
-                        <option value="">Alle Fächer</option>
-                        <option value="Geografie">Geografie</option>
-                        <option value="Naturlehre">Naturlehre</option>
-                        <option value="Geschichte">Geschichte</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Stufe</label>
-                    <select id="filterStufe" class="w-full border border-gray-300 rounded-lg px-3 py-2">
-                        <option value="">Alle Stufen</option>
-                        <option value="Sek 1">Sek 1</option>
-                        <option value="Sek 2">Sek 2</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Zeitbedarf</label>
-                    <select id="filterZeit" class="w-full border border-gray-300 rounded-lg px-3 py-2">
-                        <option value="">Beliebig</option>
-                        <option value="kurz">Kurz (< 60min)</option>
-                        <option value="mittel">Mittel (60-90min)</option>
-                        <option value="lang">Lang (> 90min)</option>
-                    </select>
-                </div>
-                <div class="flex items-end">
-                    <button onclick="resetFilter()" class="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium py-2 px-4 rounded-lg">
-                        Zurücksetzen
-                    </button>
-                </div>
-            </div>
-        </div>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Sammlung mit offenen Aufgaben</h1>
+      <p>Offene, natürlich differenzierte Denkaufgaben für den Unterricht</p>
+      <div class="brand">🧠 denkwerk.schule</div>
+    </div>
+  </header>
 
-        <!-- Aufgaben-Liste -->
-        <div id="taskList" class="space-y-6">
-            <!-- Wird dynamisch gefüllt -->
-        </div>
+  <div class="wrap">
 
-        <!-- Keine Ergebnisse -->
-        <div id="noResults" class="hidden text-center py-12">
-            <p class="text-gray-500 text-lg">Keine Aufgaben gefunden. Versuche andere Filter!</p>
+    <!-- Filter -->
+    <div class="glass filter-panel">
+      <p class="filter-title">🔍 Filter</p>
+      <div class="filter-grid">
+        <div class="filter-field">
+          <label for="filterFach">Fach</label>
+          <select id="filterFach"><option value="">Alle Fächer</option></select>
         </div>
-
+        <div class="filter-field">
+          <label for="filterStufe">Stufe</label>
+          <select id="filterStufe"><option value="">Alle Stufen</option></select>
+        </div>
+        <div class="filter-field">
+          <label for="filterZeit">Zeitbedarf</label>
+          <select id="filterZeit">
+            <option value="">Beliebig</option>
+            <option value="kurz">Kurz (&lt; 60 min)</option>
+            <option value="mittel">Mittel (60-90 min)</option>
+            <option value="lang">Lang (&gt; 90 min)</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <button class="btn-reset" onclick="resetFilters()">Alle anzeigen</button>
+        </div>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="mt-16 py-8 bg-gray-800 text-gray-300">
-        <div class="container mx-auto px-4 max-w-6xl text-center">
-            <p>&copy; 2026 David Halser | <a href="https://denkwerk.schule" class="text-amber-400 hover:text-amber-300">denkwerk.schule</a></p>
-            <p class="text-sm mt-2">Lizenz: CC BY-SA 4.0</p>
+    <p class="result-count" id="resultCount"></p>
+
+    <div id="taskGrid" class="grid"></div>
+
+    <div id="stateEmpty" class="state-panel glass" style="display:none;">
+      <span class="emoji">🔎</span>
+      Keine Aufgaben gefunden. Versuch andere Filter oder klicke auf „Alle anzeigen".
+    </div>
+
+    <div id="stateLoading" class="state-panel glass">
+      <span class="emoji">⏳</span>
+      Aufgaben werden geladen …
+    </div>
+
+    <div id="stateError" class="state-panel glass" style="display:none;">
+      <span class="emoji">⚠️</span>
+      Die Aufgabenliste (<code>tasks.json</code>) konnte nicht geladen werden.<br>
+      Falls du diese Seite lokal per Doppelklick geöffnet hast: das funktioniert wegen Browser-Sicherheits&shy;beschränkungen nicht - bitte über die GitHub-Pages-URL aufrufen oder einen lokalen Server starten.
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 David Halser | <a href="https://denkwerk.schule">denkwerk.schule</a></p>
+    <p style="margin-top:4px;">Lizenz: CC BY-SA 4.0</p>
+  </footer>
+
+<script>
+  const FACH_ICONS = {
+    "Geografie": "🌍",
+    "Naturlehre": "🔬",
+    "Geschichte": "🏛️",
+    "Deutsch": "📖",
+    "Mathematik": "📐",
+  };
+
+  let allTasks = [];
+
+  async function loadTasks() {
+    try {
+      const res = await fetch('tasks.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      allTasks = await res.json();
+      document.getElementById('stateLoading').style.display = 'none';
+      populateFilterOptions();
+      renderTasks(allTasks);
+    } catch (err) {
+      console.error(err);
+      document.getElementById('stateLoading').style.display = 'none';
+      document.getElementById('stateError').style.display = 'block';
+    }
+  }
+
+  function populateFilterOptions() {
+    const faecher = [...new Set(allTasks.flatMap(t => t.fach || []))].sort();
+    const stufen = [...new Set(allTasks.map(t => t.stufe).filter(Boolean))].sort();
+
+    const fachSelect = document.getElementById('filterFach');
+    faecher.forEach(f => {
+      const opt = document.createElement('option');
+      opt.value = f; opt.textContent = f;
+      fachSelect.appendChild(opt);
+    });
+
+    const stufeSelect = document.getElementById('filterStufe');
+    stufen.forEach(s => {
+      const opt = document.createElement('option');
+      opt.value = s; opt.textContent = s;
+      stufeSelect.appendChild(opt);
+    });
+  }
+
+  function cardHtml(task) {
+    const icon = FACH_ICONS[(task.fach || [])[0]] || '💡';
+    const thumb = task.vorschau
+      ? `<img src="${task.vorschau}" alt="Vorschau: ${task.titel}" loading="lazy">`
+      : `<div class="fallback-icon">${icon}</div>`;
+
+    const chips = (task.fach || []).map(f => `<span class="chip">${f}</span>`).join('');
+
+    const pdfBtn = task.pdf
+      ? `<a class="btn btn-primary" href="${task.pdf}" download>📥 PDF</a>`
+      : '';
+    const mdBtn = task.md
+      ? `<a class="btn btn-secondary" href="${task.md}" download>📝 Markdown</a>`
+      : '';
+
+    return `
+      <div class="card glass">
+        <div class="card-thumb">${thumb}</div>
+        <div class="card-body">
+          <div class="chips">${chips}</div>
+          <h3>${task.titel}</h3>
+          <p class="desc">${task.beschreibung || ''}</p>
+          <div class="meta">
+            <span>📚 ${task.stufe || '-'}</span>
+            <span>⏱️ ${task.zeitbedarf || '-'}</span>
+            <span>🎯 ${task.aufgabentyp || '-'}</span>
+          </div>
+          <div class="card-actions">${pdfBtn}${mdBtn}</div>
         </div>
-    </footer>
+      </div>`;
+  }
 
-    <script>
-        // Aufgaben-Datenbank
-        const aufgaben = [
-            {
-                titel: "Flaschenpost",
-                fach: ["Geografie", "Naturlehre"],
-                stufe: "Sek 1",
-                zeitbedarf: "90min",
-                zeitMinuten: 90,
-                typ: "problem-basiert",
-                pfad: "aufgaben/geografie/flaschenpost",
-                beschreibung: "Kinder aus Sedrun schicken eine Flaschenpost den Rhein hinunter - wie weit kommt sie?"
-            },
-            {
-                titel: "Ein Haus - zwei Welten",
-                fach: ["Geschichte"],
-                stufe: "Sek 1",
-                zeitbedarf: "90-120min",
-                zeitMinuten: 105,
-                typ: "narrativ-historisch",
-                pfad: "aufgaben/geschichte/ein-haus-zwei-welten",
-                beschreibung: "Zwei Jungen, am selben Tag 1923 in Berlin geboren - zwei völlig unterschiedliche Lebenswege."
-            }
-        ];
+  function renderTasks(tasks) {
+    const grid = document.getElementById('taskGrid');
+    const empty = document.getElementById('stateEmpty');
+    const count = document.getElementById('resultCount');
 
-        // Aufgaben rendern
-        function renderTasks(tasks) {
-            const container = document.getElementById('taskList');
-            const noResults = document.getElementById('noResults');
-            
-            if (tasks.length === 0) {
-                container.innerHTML = '';
-                noResults.classList.remove('hidden');
-                return;
-            }
-            
-            noResults.classList.add('hidden');
-            
-            container.innerHTML = tasks.map(task => `
-                <div class="task-card bg-white rounded-lg shadow-md p-6">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-gray-800 mb-2">${task.titel}</h3>
-                            <div class="flex flex-wrap gap-2 mb-3">
-                                ${task.fach.map(f => `<span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium">${f}</span>`).join('')}
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <p class="text-gray-600 mb-4">${task.beschreibung}</p>
-                    
-                    <div class="flex flex-wrap gap-3 text-sm text-gray-600 mb-4">
-                        <span>📚 ${task.stufe}</span>
-                        <span>⏱️ ${task.zeitbedarf}</span>
-                        <span>🎯 ${task.typ}</span>
-                    </div>
-                    
-                    <div class="flex gap-3">
-                        <a href="${task.pfad}/aufgabe.pdf" 
-                           class="bg-amber-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded-lg inline-flex items-center gap-2"
-                           download>
-                            📥 PDF herunterladen
-                        </a>
-                        <a href="${task.pfad}/aufgabe.md" 
-                           class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium py-2 px-4 rounded-lg inline-flex items-center gap-2"
-                           download>
-                            📝 Markdown
-                        </a>
-                    </div>
-                </div>
-            `).join('');
-        }
+    count.textContent = tasks.length === allTasks.length
+      ? `${allTasks.length} Aufgabe${allTasks.length === 1 ? '' : 'n'}`
+      : `${tasks.length} von ${allTasks.length} Aufgaben`;
 
-        // Filter anwenden
-        function applyFilters() {
-            const fach = document.getElementById('filterFach').value;
-            const stufe = document.getElementById('filterStufe').value;
-            const zeit = document.getElementById('filterZeit').value;
-            
-            let filtered = aufgaben;
-            
-            if (fach) {
-                filtered = filtered.filter(a => a.fach.includes(fach));
-            }
-            
-            if (stufe) {
-                filtered = filtered.filter(a => a.stufe === stufe);
-            }
-            
-            if (zeit) {
-                if (zeit === 'kurz') filtered = filtered.filter(a => a.zeitMinuten < 60);
-                if (zeit === 'mittel') filtered = filtered.filter(a => a.zeitMinuten >= 60 && a.zeitMinuten <= 90);
-                if (zeit === 'lang') filtered = filtered.filter(a => a.zeitMinuten > 90);
-            }
-            
-            renderTasks(filtered);
-        }
+    if (tasks.length === 0) {
+      grid.innerHTML = '';
+      empty.style.display = 'block';
+      return;
+    }
+    empty.style.display = 'none';
+    grid.innerHTML = tasks.map(cardHtml).join('');
+  }
 
-        // Filter zurücksetzen
-        function resetFilter() {
-            document.getElementById('filterFach').value = '';
-            document.getElementById('filterStufe').value = '';
-            document.getElementById('filterZeit').value = '';
-            renderTasks(aufgaben);
-        }
+  function applyFilters() {
+    const fach = document.getElementById('filterFach').value;
+    const stufe = document.getElementById('filterStufe').value;
+    const zeit = document.getElementById('filterZeit').value;
 
-        // Event Listener
-        document.getElementById('filterFach').addEventListener('change', applyFilters);
-        document.getElementById('filterStufe').addEventListener('change', applyFilters);
-        document.getElementById('filterZeit').addEventListener('change', applyFilters);
+    let filtered = allTasks;
+    if (fach) filtered = filtered.filter(t => (t.fach || []).includes(fach));
+    if (stufe) filtered = filtered.filter(t => t.stufe === stufe);
+    if (zeit === 'kurz') filtered = filtered.filter(t => t.zeitMinuten > 0 && t.zeitMinuten < 60);
+    if (zeit === 'mittel') filtered = filtered.filter(t => t.zeitMinuten >= 60 && t.zeitMinuten <= 90);
+    if (zeit === 'lang') filtered = filtered.filter(t => t.zeitMinuten > 90);
 
-        // Initial rendern
-        renderTasks(aufgaben);
-    </script>
+    renderTasks(filtered);
+  }
+
+  function resetFilters() {
+    document.getElementById('filterFach').value = '';
+    document.getElementById('filterStufe').value = '';
+    document.getElementById('filterZeit').value = '';
+    renderTasks(allTasks);
+  }
+
+  document.getElementById('filterFach').addEventListener('change', applyFilters);
+  document.getElementById('filterStufe').addEventListener('change', applyFilters);
+  document.getElementById('filterZeit').addEventListener('change', applyFilters);
+
+  loadTasks();
+</script>
 
 </body>
 </html>
-```
-
----
-
-### Schritt 2: Datei commiten
-
-**Unten auf der Seite:**
-- **"Commit new file"** klicken
-
----
-
-### Schritt 3: Testen!
-
-**Warte ca. 1-2 Minuten**, dann geh zu:
-```
-https://denkwerk-schule.github.io/aufgabensammlung/

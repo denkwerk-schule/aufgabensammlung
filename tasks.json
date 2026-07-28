@@ -1,0 +1,178 @@
+[
+  {
+    "id": "anruf_aus_rovaniemi",
+    "titel": "Anruf aus Rovaniemi",
+    "fach": [
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "Graubünden (Ilanz) und Finnland (Rovaniemi)",
+    "themen": [
+      "Tageslänge",
+      "Geografische Breite",
+      "Polartag und Polarnacht",
+      "Erdachse und Jahreszeiten"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Scheint die Sonne in Rovaniemi und in Ilanz pro Jahr gleich lang? Zwei Freundinnen wetten.",
+    "pfad": "aufgaben/geografie/anruf_aus_rovaniemi",
+    "pdf": "aufgaben/geografie/anruf_aus_rovaniemi/aufgabe.pdf",
+    "md": "aufgaben/geografie/anruf_aus_rovaniemi/aufgabe.md",
+    "vorschau": "aufgaben/geografie/anruf_aus_rovaniemi/vorschau.jpg"
+  },
+  {
+    "id": "app_werbung",
+    "titel": "App-Werbung",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "45-60min",
+    "zeitMinuten": 52,
+    "regionalbezug": "keiner",
+    "themen": [
+      "Sprachanalyse",
+      "Übersetzung",
+      "Werbesprache"
+    ],
+    "aufgabentyp": "sprachanalytisch",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Eine App-Store-Werbung in holprigem Deutsch - was steckt eigentlich dahinter?",
+    "pfad": "aufgaben/deutsch/app_werbung",
+    "pdf": "aufgaben/deutsch/app_werbung/aufgabe.pdf",
+    "md": "aufgaben/deutsch/app_werbung/aufgabe.md",
+    "vorschau": "aufgaben/deutsch/app_werbung/vorschau.jpg"
+  },
+  {
+    "id": "ein-haus-zwei-welten",
+    "titel": "Ein Haus - zwei Welten",
+    "fach": [
+      "Geschichte"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "90-120min",
+    "zeitMinuten": 105,
+    "regionalbezug": "keiner (Berlin/Deutschland)",
+    "themen": [
+      "Inflation 1923",
+      "Jüdisches Leben",
+      "Nationalsozialismus",
+      "Biografien",
+      "Zeitgeschichte"
+    ],
+    "aufgabentyp": "narrativ-historisch",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Zwei Jungen, am selben Tag 1923 in Berlin geboren - zwei völlig unterschiedliche Lebenswege.",
+    "pfad": "aufgaben/geschichte/ein-haus-zwei-welten",
+    "pdf": "aufgaben/geschichte/ein-haus-zwei-welten/aufgabe.pdf",
+    "md": "aufgaben/geschichte/ein-haus-zwei-welten/aufgabe.md",
+    "vorschau": "aufgaben/geschichte/ein-haus-zwei-welten/vorschau.jpg"
+  },
+  {
+    "id": "flaschenpost",
+    "titel": "Flaschenpost",
+    "fach": [
+      "Geografie",
+      "Naturlehre"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "90min",
+    "zeitMinuten": 90,
+    "regionalbezug": "Graubünden",
+    "themen": [
+      "Gewässerkunde",
+      "Rhein",
+      "Geschwindigkeit",
+      "Berechnungen"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Kinder aus Sedrun schicken eine Flaschenpost den Rhein hinunter - wie weit kommt sie?",
+    "pfad": "aufgaben/geografie/flaschenpost",
+    "pdf": "aufgaben/geografie/flaschenpost/aufgabe.pdf",
+    "md": "aufgaben/geografie/flaschenpost/aufgabe.md",
+    "vorschau": "aufgaben/geografie/flaschenpost/vorschau.jpg"
+  },
+  {
+    "id": "vorderrhein_vs_hinterrhein",
+    "titel": "Vorder- vs. Hinterrhein",
+    "fach": [
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "grundlegende Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "Graubünden (Reichenau, Sedrun, Splügen)",
+    "themen": [
+      "Gewässerkunde",
+      "Einzugsgebiet",
+      "Kartenarbeit",
+      "Vergleich und Argumentation"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Zwei Schulklassen streiten, welcher Rhein grösser ist - wer gewinnt die Wette?",
+    "pfad": "aufgaben/geografie/vorderrhein_vs_hinterrhein",
+    "pdf": "aufgaben/geografie/vorderrhein_vs_hinterrhein/aufgabe.pdf",
+    "md": "aufgaben/geografie/vorderrhein_vs_hinterrhein/aufgabe.md",
+    "vorschau": "aufgaben/geografie/vorderrhein_vs_hinterrhein/vorschau.jpg"
+  },
+  {
+    "id": "wasser_sparen",
+    "titel": "Wasser sparen",
+    "fach": [
+      "Geografie",
+      "Naturlehre"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "grundlegende Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "Graubünden (Surselva)",
+    "themen": [
+      "Wasserverbrauch",
+      "Ressourcen und Nachhaltigkeit",
+      "Berechnungen",
+      "Alltagsökonomie"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Ein Ziegelstein im Spülkasten soll Wasser sparen - wie viel Geld bringt das der Familie Decurtins?",
+    "pfad": "aufgaben/natur_und_technik/wasser_sparen",
+    "pdf": "aufgaben/natur_und_technik/wasser_sparen/aufgabe.pdf",
+    "md": "aufgaben/natur_und_technik/wasser_sparen/aufgabe.md",
+    "vorschau": "aufgaben/natur_und_technik/wasser_sparen/vorschau.jpg"
+  },
+  {
+    "id": "weekend_trip",
+    "titel": "Weekend-Trip",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "grundlegende Anforderungen",
+    "zeitbedarf": "60min",
+    "zeitMinuten": 60,
+    "regionalbezug": "keiner",
+    "themen": [
+      "Kreatives Schreiben",
+      "Planung",
+      "Textproduktion"
+    ],
+    "aufgabentyp": "narrativ-kreativ",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Fünf Freunde schenken einem Paar einen Wochenend-Trip - plant die perfekte Überraschung.",
+    "pfad": "aufgaben/deutsch/weekend_trip",
+    "pdf": "aufgaben/deutsch/weekend_trip/aufgabe.pdf",
+    "md": "aufgaben/deutsch/weekend_trip/aufgabe.md",
+    "vorschau": "aufgaben/deutsch/weekend_trip/vorschau.jpg"
+  }
+]

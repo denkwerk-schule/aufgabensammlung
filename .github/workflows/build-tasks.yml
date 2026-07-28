@@ -1,0 +1,50 @@
+name: tasks.json automatisch aktualisieren
+
+# Laeuft immer, wenn sich etwas im aufgaben/-Ordner aendert (neue Aufgabe,
+# geaenderte metadata.yml, etc.) und schreibt tasks.json + fehlende
+# Vorschaubilder neu. Dadurch muss die index.html nie manuell angepasst
+# werden - neue Aufgaben werden automatisch erkannt.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "aufgaben/**"
+      - "scripts/build_tasks.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python installieren
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Abhaengigkeiten installieren
+        run: |
+          pip install pyyaml
+          sudo apt-get update -y
+          sudo apt-get install -y poppler-utils
+
+      - name: tasks.json und Vorschaubilder generieren
+        run: python3 scripts/build_tasks.py
+
+      - name: Aenderungen committen
+        run: |
+          git config user.name "denkwerk-bot"
+          git config user.email "actions@github.com"
+          git add tasks.json aufgaben/**/vorschau.jpg
+          if git diff --cached --quiet; then
+            echo "Keine Aenderungen."
+          else
+            git commit -m "tasks.json automatisch aktualisiert [skip ci]"
+            git push
+          fi
