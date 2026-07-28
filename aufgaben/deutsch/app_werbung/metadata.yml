@@ -1,0 +1,26 @@
+---
+titel: "App-Werbung"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: erweiterte Anforderungen
+zeitbedarf: 45-60min
+regionalbezug: keiner
+kontext: Maschinelle Übersetzung, App-Store-Werbetext
+themen:
+  - Sprachanalyse
+  - Übersetzung
+  - Werbesprache
+aufgabentyp: sprachanalytisch
+offenheitsgrad: offen
+kompetenzen:
+  - Textverständnis
+  - Kritisches Lesen
+  - Sprachbewusstsein
+materialien:
+  - Werbetext
+  - Screenshot App-Store
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---
