@@ -22,7 +22,11 @@
     "pfad": "aufgaben/geografie/anruf_aus_rovaniemi",
     "pdf": "aufgaben/geografie/anruf_aus_rovaniemi/aufgabe.pdf",
     "md": "aufgaben/geografie/anruf_aus_rovaniemi/aufgabe.md",
-    "vorschau": "aufgaben/geografie/anruf_aus_rovaniemi/vorschau.jpg"
+    "vorschau": "aufgaben/geografie/anruf_aus_rovaniemi/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geografie/anruf_aus_rovaniemi/vorschau-seite-1.jpg",
+      "aufgaben/geografie/anruf_aus_rovaniemi/vorschau-seite-2.jpg"
+    ]
   },
   {
     "id": "app_werbung",
@@ -46,7 +50,11 @@
     "pfad": "aufgaben/deutsch/app_werbung",
     "pdf": "aufgaben/deutsch/app_werbung/aufgabe.pdf",
     "md": "aufgaben/deutsch/app_werbung/aufgabe.md",
-    "vorschau": "aufgaben/deutsch/app_werbung/vorschau.jpg"
+    "vorschau": "aufgaben/deutsch/app_werbung/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/deutsch/app_werbung/vorschau-seite-1.jpg",
+      "aufgaben/deutsch/app_werbung/vorschau-seite-2.jpg"
+    ]
   },
   {
     "id": "ein-haus-zwei-welten",
@@ -72,7 +80,11 @@
     "pfad": "aufgaben/geschichte/ein-haus-zwei-welten",
     "pdf": "aufgaben/geschichte/ein-haus-zwei-welten/aufgabe.pdf",
     "md": "aufgaben/geschichte/ein-haus-zwei-welten/aufgabe.md",
-    "vorschau": "aufgaben/geschichte/ein-haus-zwei-welten/vorschau.jpg"
+    "vorschau": "aufgaben/geschichte/ein-haus-zwei-welten/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geschichte/ein-haus-zwei-welten/vorschau-seite-1.jpg",
+      "aufgaben/geschichte/ein-haus-zwei-welten/vorschau-seite-2.jpg"
+    ]
   },
   {
     "id": "flaschenpost",
@@ -98,7 +110,11 @@
     "pfad": "aufgaben/geografie/flaschenpost",
     "pdf": "aufgaben/geografie/flaschenpost/aufgabe.pdf",
     "md": "aufgaben/geografie/flaschenpost/aufgabe.md",
-    "vorschau": "aufgaben/geografie/flaschenpost/vorschau.jpg"
+    "vorschau": "aufgaben/geografie/flaschenpost/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geografie/flaschenpost/vorschau-seite-1.jpg",
+      "aufgaben/geografie/flaschenpost/vorschau-seite-2.jpg"
+    ]
   },
   {
     "id": "vorderrhein_vs_hinterrhein",
@@ -123,7 +139,11 @@
     "pfad": "aufgaben/geografie/vorderrhein_vs_hinterrhein",
     "pdf": "aufgaben/geografie/vorderrhein_vs_hinterrhein/aufgabe.pdf",
     "md": "aufgaben/geografie/vorderrhein_vs_hinterrhein/aufgabe.md",
-    "vorschau": "aufgaben/geografie/vorderrhein_vs_hinterrhein/vorschau.jpg"
+    "vorschau": "aufgaben/geografie/vorderrhein_vs_hinterrhein/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geografie/vorderrhein_vs_hinterrhein/vorschau-seite-1.jpg",
+      "aufgaben/geografie/vorderrhein_vs_hinterrhein/vorschau-seite-2.jpg"
+    ]
   },
   {
     "id": "wasser_sparen",
@@ -149,7 +169,11 @@
     "pfad": "aufgaben/natur_und_technik/wasser_sparen",
     "pdf": "aufgaben/natur_und_technik/wasser_sparen/aufgabe.pdf",
     "md": "aufgaben/natur_und_technik/wasser_sparen/aufgabe.md",
-    "vorschau": "aufgaben/natur_und_technik/wasser_sparen/vorschau.jpg"
+    "vorschau": "aufgaben/natur_und_technik/wasser_sparen/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/natur_und_technik/wasser_sparen/vorschau-seite-1.jpg",
+      "aufgaben/natur_und_technik/wasser_sparen/vorschau-seite-2.jpg"
+    ]
   },
   {
     "id": "weekend_trip",
@@ -173,6 +197,10 @@
     "pfad": "aufgaben/deutsch/weekend_trip",
     "pdf": "aufgaben/deutsch/weekend_trip/aufgabe.pdf",
     "md": "aufgaben/deutsch/weekend_trip/aufgabe.md",
-    "vorschau": "aufgaben/deutsch/weekend_trip/vorschau.jpg"
+    "vorschau": "aufgaben/deutsch/weekend_trip/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/deutsch/weekend_trip/vorschau-seite-1.jpg",
+      "aufgaben/deutsch/weekend_trip/vorschau-seite-2.jpg"
+    ]
   }
 ]

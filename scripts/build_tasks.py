@@ -44,13 +44,26 @@ def parse_zeitbedarf_minuten(zeitbedarf: str) -> int:
     return round(sum(numbers) / len(numbers))
 
 
-def ensure_preview(task_dir: Path) -> str | None:
-    """Erzeugt vorschau.jpg aus Seite 1 von aufgabe.pdf, falls noch nicht vorhanden."""
-    preview = task_dir / "vorschau.jpg"
+def pdf_page_count(pdf: Path) -> int:
+    try:
+        out = subprocess.run(
+            ["pdfinfo", str(pdf)], check=True, capture_output=True, text=True
+        ).stdout
+        for line in out.splitlines():
+            if line.startswith("Pages:"):
+                return int(line.split(":")[1].strip())
+    except (subprocess.CalledProcessError, FileNotFoundError, ValueError):
+        pass
+    return 1
+
+
+def ensure_page_preview(task_dir: Path, page: int, filename: str) -> str | None:
+    """Erzeugt ein Vorschaubild fuer eine einzelne PDF-Seite, falls noch nicht vorhanden."""
+    preview = task_dir / filename
     pdf = task_dir / "aufgabe.pdf"
 
     if preview.exists():
-        return "vorschau.jpg"
+        return filename
 
     if not pdf.exists():
         return None
@@ -60,26 +73,47 @@ def ensure_preview(task_dir: Path) -> str | None:
             [
                 "pdftoppm",
                 "-jpeg",
-                "-jpegopt", "quality=82",
-                "-f", "1", "-l", "1",
-                "-scale-to-x", "700",
+                "-jpegopt", "quality=85",
+                "-f", str(page), "-l", str(page),
+                "-scale-to-x", "1400",
                 "-scale-to-y", "-1",
                 str(pdf),
-                str(task_dir / "vorschau"),
+                str(task_dir / preview.stem),
             ],
             check=True,
             capture_output=True,
         )
-        # pdftoppm haengt bei -f/-l 1 eine Seitennummer an: vorschau-1.jpg
-        generated = task_dir / "vorschau-1.jpg"
+        # pdftoppm haengt bei -f/-l eine Seitennummer an: <stem>-<page>.jpg
+        generated = task_dir / f"{preview.stem}-{page}.jpg"
         if generated.exists():
             generated.rename(preview)
             print(f"  Vorschau erzeugt: {preview.relative_to(ROOT)}")
-            return "vorschau.jpg"
+            return filename
     except (subprocess.CalledProcessError, FileNotFoundError) as e:
-        print(f"  Warnung: Konnte keine Vorschau fuer {pdf} erzeugen ({e})", file=sys.stderr)
+        print(f"  Warnung: Konnte keine Vorschau fuer {pdf} (Seite {page}) erzeugen ({e})", file=sys.stderr)
 
     return None
+
+
+def ensure_previews(task_dir: Path) -> list[str]:
+    """Erzeugt Kartenvorschau (vorschau.jpg, Seite 1) sowie Vollansichten fuer
+    alle Seiten des PDFs (vorschau-seite-1.jpg, vorschau-seite-2.jpg, ...) fuer
+    die grosse Klick-Vorschau. Gibt die Liste der Vollansicht-Dateinamen zurueck."""
+    pdf = task_dir / "aufgabe.pdf"
+
+    # kleine Kartenvorschau (bleibt wie bisher: vorschau.jpg)
+    ensure_page_preview(task_dir, 1, "vorschau.jpg")
+
+    if not pdf.exists():
+        return []
+
+    pages = pdf_page_count(pdf)
+    seiten = []
+    for page in range(1, pages + 1):
+        filename = ensure_page_preview(task_dir, page, f"vorschau-seite-{page}.jpg")
+        if filename:
+            seiten.append(filename)
+    return seiten
 
 
 def main():
@@ -113,7 +147,9 @@ def main():
         if not pdf_exists:
             print(f"Warnung: {rel_path} hat kein aufgabe.pdf.", file=sys.stderr)
 
-        preview = ensure_preview(task_dir)
+        preview_exists = (task_dir / "vorschau.jpg").exists()
+        seiten = ensure_previews(task_dir)
+        preview = "vorschau.jpg" if (preview_exists or (task_dir / "vorschau.jpg").exists()) else None
 
         task = {
             "id": task_dir.name,
@@ -132,6 +168,7 @@ def main():
             "pdf": f"{rel_path}/aufgabe.pdf" if pdf_exists else None,
             "md": f"{rel_path}/aufgabe.md" if md_exists else None,
             "vorschau": f"{rel_path}/{preview}" if preview else None,
+            "vorschauSeiten": [f"{rel_path}/{s}" for s in seiten],
         }
         tasks.append(task)
 

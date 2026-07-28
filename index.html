@@ -292,6 +292,80 @@
     .filter-panel{position:static;}
     header.hero{padding:48px 0 28px;}
   }
+
+  .card-thumb{cursor:zoom-in;}
+
+  /* ---------- Lightbox ---------- */
+  .lightbox{
+    position:fixed;
+    inset:0;
+    z-index:100;
+    display:none;
+    align-items:flex-start;
+    justify-content:center;
+    padding:40px 20px;
+    overflow-y:auto;
+    background:rgba(20,16,12,0.55);
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+  }
+  .lightbox.open{display:flex;}
+  .lightbox-panel{
+    width:100%;
+    max-width:1080px;
+    padding:26px;
+    position:relative;
+  }
+  .lightbox-close{
+    position:absolute;
+    top:16px;
+    right:16px;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:none;
+    background:rgba(0,0,0,0.08);
+    color:var(--ink);
+    font-size:1.2rem;
+    line-height:1;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:background .15s, transform .1s;
+  }
+  .lightbox-close:hover{background:rgba(0,0,0,0.14);}
+  .lightbox-close:active{transform:scale(0.92);}
+  .lightbox-header{margin:0 56px 18px 4px;}
+  .lightbox-header h2{
+    font-size:1.4rem;
+    font-weight:750;
+    margin:0 0 6px;
+    letter-spacing:-0.01em;
+  }
+  .lightbox-header p{
+    margin:0;
+    font-size:0.9rem;
+    color:var(--ink-soft);
+  }
+  .lightbox-pages{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:18px;
+  }
+  .lightbox-pages img{
+    width:100%;
+    border-radius:16px;
+    display:block;
+    box-shadow:0 10px 30px rgba(0,0,0,0.18);
+  }
+  .lightbox-actions{
+    display:flex;
+    gap:12px;
+    margin-top:22px;
+    flex-wrap:wrap;
+  }
+  .lightbox-actions .btn{flex:none;padding:11px 20px;}
 </style>
 </head>
 <body>
@@ -360,6 +434,18 @@
     <p style="margin-top:4px;">Lizenz: CC BY-SA 4.0</p>
   </footer>
 
+  <div class="lightbox" id="lightbox">
+    <div class="glass lightbox-panel">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Schliessen">✕</button>
+      <div class="lightbox-header">
+        <h2 id="lightboxTitel"></h2>
+        <p id="lightboxMeta"></p>
+      </div>
+      <div class="lightbox-pages" id="lightboxPages"></div>
+      <div class="lightbox-actions" id="lightboxActions"></div>
+    </div>
+  </div>
+
 <script>
   const FACH_ICONS = {
     "Geografie": "🌍",
@@ -422,7 +508,7 @@
 
     return `
       <div class="card glass">
-        <div class="card-thumb">${thumb}</div>
+        <div class="card-thumb" onclick="openLightbox('${task.id}')" title="Grosse Vorschau ansehen">${thumb}</div>
         <div class="card-body">
           <div class="chips">${chips}</div>
           <h3>${task.titel}</h3>
@@ -436,6 +522,41 @@
         </div>
       </div>`;
   }
+
+  function openLightbox(id) {
+    const task = allTasks.find(t => t.id === id);
+    if (!task) return;
+
+    document.getElementById('lightboxTitel').textContent = task.titel;
+    document.getElementById('lightboxMeta').textContent =
+      [task.stufe, task.zeitbedarf, task.aufgabentyp].filter(Boolean).join(' · ');
+
+    const pages = (task.vorschauSeiten && task.vorschauSeiten.length)
+      ? task.vorschauSeiten
+      : (task.vorschau ? [task.vorschau] : []);
+    document.getElementById('lightboxPages').innerHTML = pages.length
+      ? pages.map((src, i) => `<img src="${src}" alt="${task.titel} - Seite ${i + 1}" loading="lazy">`).join('')
+      : '<p style="color:var(--ink-faint);">Keine Vorschau verfügbar.</p>';
+
+    const pdfBtn = task.pdf ? `<a class="btn btn-primary" href="${task.pdf}" download>📥 PDF herunterladen</a>` : '';
+    const mdBtn = task.md ? `<a class="btn btn-secondary" href="${task.md}" download>📝 Markdown herunterladen</a>` : '';
+    document.getElementById('lightboxActions').innerHTML = pdfBtn + mdBtn;
+
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('lightbox').addEventListener('click', (e) => {
+    if (e.target.id === 'lightbox') closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
 
   function renderTasks(tasks) {
     const grid = document.getElementById('taskGrid');
