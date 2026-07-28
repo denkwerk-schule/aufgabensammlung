@@ -57,6 +57,93 @@
     ]
   },
   {
+    "id": "autofreier_sonntag",
+    "titel": "Autofreier Sonntag",
+    "fach": [
+      "Naturlehre"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Mobilität",
+      "CO2-Emissionen",
+      "Ressourcenverbrauch",
+      "Schätzen und Berechnen"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Ein Sonntag ganz ohne Autos in der Schweiz - wie viel CO2, Treibstoff und Geld liesse sich damit sparen?",
+    "pfad": "aufgaben/natur_und_technik/autofreier_sonntag",
+    "pdf": "aufgaben/natur_und_technik/autofreier_sonntag/aufgabe.pdf",
+    "md": "aufgaben/natur_und_technik/autofreier_sonntag/aufgabe.md",
+    "vorschau": "aufgaben/natur_und_technik/autofreier_sonntag/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/natur_und_technik/autofreier_sonntag/vorschau-seite-1.jpg",
+      "aufgaben/natur_und_technik/autofreier_sonntag/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "deutsch_fuer_chinesen",
+    "titel": "Deutsch für Chinesen",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "45-60min",
+    "zeitMinuten": 52,
+    "regionalbezug": "keiner",
+    "themen": [
+      "Grammatik",
+      "Sprachvergleich",
+      "Wortarten"
+    ],
+    "aufgabentyp": "sprachanalytisch",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Ein absichtlich grammatikfreier Werbetext für einen Deutschkurs - übersetze ihn in korrektes Deutsch.",
+    "pfad": "aufgaben/deutsch/deutsch_fuer_chinesen",
+    "pdf": "aufgaben/deutsch/deutsch_fuer_chinesen/aufgabe.pdf",
+    "md": "aufgaben/deutsch/deutsch_fuer_chinesen/aufgabe.md",
+    "vorschau": "aufgaben/deutsch/deutsch_fuer_chinesen/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/deutsch/deutsch_fuer_chinesen/vorschau-seite-1.jpg",
+      "aufgaben/deutsch/deutsch_fuer_chinesen/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "schweiz_2040",
+    "titel": "Die Schweiz 2040",
+    "fach": [
+      "Geschichte",
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "90-120min",
+    "zeitMinuten": 105,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Bevölkerungsentwicklung",
+      "Demografie",
+      "Zukunftsszenarien",
+      "Präsentation"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Wie viele Menschen leben 2040 in der Schweiz? Entwickle drei begründete Bevölkerungsszenarien.",
+    "pfad": "aufgaben/geschichte/schweiz_2040",
+    "pdf": "aufgaben/geschichte/schweiz_2040/aufgabe.pdf",
+    "md": "aufgaben/geschichte/schweiz_2040/aufgabe.md",
+    "vorschau": "aufgaben/geschichte/schweiz_2040/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geschichte/schweiz_2040/vorschau-seite-1.jpg",
+      "aufgaben/geschichte/schweiz_2040/vorschau-seite-2.jpg"
+    ]
+  },
+  {
     "id": "ein-haus-zwei-welten",
     "titel": "Ein Haus - zwei Welten",
     "fach": [
@@ -87,6 +174,93 @@
     ]
   },
   {
+    "id": "elektrische_schaltung",
+    "titel": "Elektrische Schaltung",
+    "fach": [
+      "Naturlehre"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "90-120min",
+    "zeitMinuten": 105,
+    "regionalbezug": "keiner",
+    "themen": [
+      "Elektrische Schaltungen",
+      "Serie- und Wechselschaltung",
+      "Sicherheit"
+    ],
+    "aufgabentyp": "konstruktionsaufgabe",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Plane die komplette Elektroinstallation eines Hauses - von der Zweierschaltung im Kinderzimmer bis zur Werkstatt-Sicherheit.",
+    "pfad": "aufgaben/natur_und_technik/elektrische_schaltung",
+    "pdf": "aufgaben/natur_und_technik/elektrische_schaltung/aufgabe.pdf",
+    "md": "aufgaben/natur_und_technik/elektrische_schaltung/aufgabe.md",
+    "vorschau": "aufgaben/natur_und_technik/elektrische_schaltung/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/natur_und_technik/elektrische_schaltung/vorschau-seite-1.jpg",
+      "aufgaben/natur_und_technik/elektrische_schaltung/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "energiehaushalt_erde",
+    "titel": "Energiehaushalt Erde",
+    "fach": [
+      "Naturlehre",
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "45-60min",
+    "zeitMinuten": 52,
+    "regionalbezug": "keiner",
+    "themen": [
+      "Energiehaushalt",
+      "Strahlungsenergie",
+      "Klimazonen",
+      "Wärmegleichgewicht"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Warum ist es am Äquator warm und an den Polen kalt - und warum bleibt es dabei im Gleichgewicht?",
+    "pfad": "aufgaben/natur_und_technik/energiehaushalt_erde",
+    "pdf": "aufgaben/natur_und_technik/energiehaushalt_erde/aufgabe.pdf",
+    "md": "aufgaben/natur_und_technik/energiehaushalt_erde/aufgabe.md",
+    "vorschau": "aufgaben/natur_und_technik/energiehaushalt_erde/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/natur_und_technik/energiehaushalt_erde/vorschau-seite-1.jpg",
+      "aufgaben/natur_und_technik/energiehaushalt_erde/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "energieumsatz",
+    "titel": "Energieumsatz",
+    "fach": [
+      "Naturlehre"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "keiner",
+    "themen": [
+      "Energieumsatz",
+      "Ernährung",
+      "Berechnungen",
+      "Einheiten umrechnen"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Berechne deinen eigenen Grund- und Energieumsatz und stelle einen passenden Menüplan zusammen.",
+    "pfad": "aufgaben/natur_und_technik/energieumsatz",
+    "pdf": "aufgaben/natur_und_technik/energieumsatz/aufgabe.pdf",
+    "md": "aufgaben/natur_und_technik/energieumsatz/aufgabe.md",
+    "vorschau": "aufgaben/natur_und_technik/energieumsatz/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/natur_und_technik/energieumsatz/vorschau-seite-1.jpg",
+      "aufgaben/natur_und_technik/energieumsatz/vorschau-seite-2.jpg"
+    ]
+  },
+  {
     "id": "flaschenpost",
     "titel": "Flaschenpost",
     "fach": [
@@ -114,6 +288,261 @@
     "vorschauSeiten": [
       "aufgaben/geografie/flaschenpost/vorschau-seite-1.jpg",
       "aufgaben/geografie/flaschenpost/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "flucht_durch_die_inseln",
+    "titel": "Flucht durch die Inseln",
+    "fach": [
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "keiner (Südostasien)",
+    "themen": [
+      "Kartenmasstab",
+      "Navigation",
+      "Berechnungen",
+      "Zeitgeschichte"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Ein Pilot ohne Massstab auf der Karte muss seine Fluchtroute durch die Inseln Südostasiens berechnen.",
+    "pfad": "aufgaben/geografie/flucht_durch_die_inseln",
+    "pdf": "aufgaben/geografie/flucht_durch_die_inseln/aufgabe.pdf",
+    "md": "aufgaben/geografie/flucht_durch_die_inseln/aufgabe.md",
+    "vorschau": "aufgaben/geografie/flucht_durch_die_inseln/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geografie/flucht_durch_die_inseln/vorschau-seite-1.jpg",
+      "aufgaben/geografie/flucht_durch_die_inseln/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "gerechte_verteilung",
+    "titel": "Gerechte Verteilung",
+    "fach": [
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "keiner (weltweit)",
+    "themen": [
+      "Bevölkerungsdichte",
+      "Weltbevölkerung",
+      "Flächenberechnung"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Wie viel Platz stünde jedem Menschen zu, wenn die Weltbevölkerung gleichmässig über die Landfläche verteilt würde?",
+    "pfad": "aufgaben/geografie/gerechte_verteilung",
+    "pdf": "aufgaben/geografie/gerechte_verteilung/aufgabe.pdf",
+    "md": "aufgaben/geografie/gerechte_verteilung/aufgabe.md",
+    "vorschau": "aufgaben/geografie/gerechte_verteilung/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geografie/gerechte_verteilung/vorschau-seite-1.jpg",
+      "aufgaben/geografie/gerechte_verteilung/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "millionenschatz",
+    "titel": "Millionenschatz",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "45-60min",
+    "zeitMinuten": 52,
+    "regionalbezug": "keiner",
+    "themen": [
+      "Textverständnis",
+      "Codes und Chiffren",
+      "Wortgrenzen erkennen"
+    ],
+    "aufgabentyp": "rätsel-narrativ",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Zwei Bankräuber, drei Millionen und eine verschlüsselte Botschaft ohne Wortgrenzen - kannst du sie entschlüsseln?",
+    "pfad": "aufgaben/deutsch/millionenschatz",
+    "pdf": "aufgaben/deutsch/millionenschatz/aufgabe.pdf",
+    "md": "aufgaben/deutsch/millionenschatz/aufgabe.md",
+    "vorschau": "aufgaben/deutsch/millionenschatz/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/deutsch/millionenschatz/vorschau-seite-1.jpg",
+      "aufgaben/deutsch/millionenschatz/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "origami_faltblume",
+    "titel": "Origami-Blume",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "grundlegende Anforderungen",
+    "zeitbedarf": "45-60min",
+    "zeitMinuten": 52,
+    "regionalbezug": "keiner",
+    "themen": [
+      "Textüberarbeitung",
+      "Anleitungen schreiben",
+      "Maschinenübersetzung"
+    ],
+    "aufgabentyp": "sprachanalytisch",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Eine holprig übersetzte Origami-Faltanleitung soll in klares, verständliches Deutsch überarbeitet werden.",
+    "pfad": "aufgaben/deutsch/origami_faltblume",
+    "pdf": "aufgaben/deutsch/origami_faltblume/aufgabe.pdf",
+    "md": "aufgaben/deutsch/origami_faltblume/aufgabe.md",
+    "vorschau": "aufgaben/deutsch/origami_faltblume/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/deutsch/origami_faltblume/vorschau-seite-1.jpg",
+      "aufgaben/deutsch/origami_faltblume/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "schweizerreise",
+    "titel": "Schweizerreise",
+    "fach": [
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "90-120min",
+    "zeitMinuten": 105,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Reiseplanung",
+      "Tourismus",
+      "Öffentlicher Verkehr",
+      "Projektarbeit"
+    ],
+    "aufgabentyp": "projektbasiert",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Plant eine 5-tägige ÖV-Reiseroute durch die ganze Schweiz für Touristinnen und Touristen aus Fernost.",
+    "pfad": "aufgaben/geografie/schweizerreise",
+    "pdf": "aufgaben/geografie/schweizerreise/aufgabe.pdf",
+    "md": "aufgaben/geografie/schweizerreise/aufgabe.md",
+    "vorschau": "aufgaben/geografie/schweizerreise/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geografie/schweizerreise/vorschau-seite-1.jpg",
+      "aufgaben/geografie/schweizerreise/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "signalstafette",
+    "titel": "Signalstafette",
+    "fach": [
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "Graubünden (Ilanz, Disentis)",
+    "themen": [
+      "Kartenarbeit",
+      "Sichtverbindungen",
+      "Relief und Topografie"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Von Ilanz bis Disentis mit Signalfeuern kommunizieren - wo braucht es dafür Stationen, und wie wenige reichen aus?",
+    "pfad": "aufgaben/geografie/signalstafette",
+    "pdf": "aufgaben/geografie/signalstafette/aufgabe.pdf",
+    "md": "aufgaben/geografie/signalstafette/aufgabe.md",
+    "vorschau": "aufgaben/geografie/signalstafette/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geografie/signalstafette/vorschau-seite-1.jpg",
+      "aufgaben/geografie/signalstafette/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "solarland_schweiz",
+    "titel": "Solarland Schweiz",
+    "fach": [
+      "Geografie",
+      "Naturlehre"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Solarenergie",
+      "Flächenberechnung",
+      "Energiewende"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Wie gross müsste eine Solaranlage sein, um den Strom aller Schweizer Kernkraftwerke zu ersetzen?",
+    "pfad": "aufgaben/geografie/solarland_schweiz",
+    "pdf": "aufgaben/geografie/solarland_schweiz/aufgabe.pdf",
+    "md": "aufgaben/geografie/solarland_schweiz/aufgabe.md",
+    "vorschau": "aufgaben/geografie/solarland_schweiz/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geografie/solarland_schweiz/vorschau-seite-1.jpg",
+      "aufgaben/geografie/solarland_schweiz/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "stau",
+    "titel": "Stau auf der Autobahn",
+    "fach": [
+      "Mathematik"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "grundlegende Anforderungen",
+    "zeitbedarf": "45-60min",
+    "zeitMinuten": 52,
+    "regionalbezug": "Graubünden (Landquart)",
+    "themen": [
+      "Schätzaufgaben",
+      "Fermi-Probleme",
+      "Verkehr"
+    ],
+    "aufgabentyp": "fermi-problem",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Eine kurze Staumeldung im Radio - wie viele Menschen stecken in diesem Stau wirklich fest?",
+    "pfad": "aufgaben/mathematik/stau",
+    "pdf": "aufgaben/mathematik/stau/aufgabe.pdf",
+    "md": "aufgaben/mathematik/stau/aufgabe.md",
+    "vorschau": "aufgaben/mathematik/stau/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/mathematik/stau/vorschau-seite-1.jpg",
+      "aufgaben/mathematik/stau/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "strom_aus_holz",
+    "titel": "Strom aus Holz",
+    "fach": [
+      "Naturlehre"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "Graubünden (Ilanz, Domat/Ems)",
+    "themen": [
+      "Erneuerbare Energien",
+      "Holzenergie",
+      "Berechnungen"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Wie viel Holz bräuchte ein Kraftwerk, um die Stadt Ilanz ein Jahr lang mit Strom zu versorgen?",
+    "pfad": "aufgaben/natur_und_technik/strom_aus_holz",
+    "pdf": "aufgaben/natur_und_technik/strom_aus_holz/aufgabe.pdf",
+    "md": "aufgaben/natur_und_technik/strom_aus_holz/aufgabe.md",
+    "vorschau": "aufgaben/natur_und_technik/strom_aus_holz/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/natur_und_technik/strom_aus_holz/vorschau-seite-1.jpg",
+      "aufgaben/natur_und_technik/strom_aus_holz/vorschau-seite-2.jpg"
     ]
   },
   {
@@ -201,6 +630,120 @@
     "vorschauSeiten": [
       "aufgaben/deutsch/weekend_trip/vorschau-seite-1.jpg",
       "aufgaben/deutsch/weekend_trip/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "erfindungen",
+    "titel": "Wichtige Erfindungen",
+    "fach": [
+      "Geschichte"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "grundlegende Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "keiner",
+    "themen": [
+      "Erfindungen",
+      "Fortschritt",
+      "Bewertung und Argumentation"
+    ],
+    "aufgabentyp": "narrativ-diskursiv",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Welche zehn Erfindungen haben das Leben der Menschheit am nachhaltigsten verändert?",
+    "pfad": "aufgaben/geschichte/erfindungen",
+    "pdf": "aufgaben/geschichte/erfindungen/aufgabe.pdf",
+    "md": "aufgaben/geschichte/erfindungen/aufgabe.md",
+    "vorschau": "aufgaben/geschichte/erfindungen/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geschichte/erfindungen/vorschau-seite-1.jpg",
+      "aufgaben/geschichte/erfindungen/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "windenergie",
+    "titel": "Windenergie",
+    "fach": [
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "60-90min",
+    "zeitMinuten": 75,
+    "regionalbezug": "Graubünden (Haldenstein, Surselva)",
+    "themen": [
+      "Windenergie",
+      "Erneuerbare Energien",
+      "Berechnungen",
+      "Landschaftsschutz"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Wie viele Windräder wie in Haldenstein bräuchte es, um die ganze Surselva mit Strom zu versorgen?",
+    "pfad": "aufgaben/geografie/windenergie",
+    "pdf": "aufgaben/geografie/windenergie/aufgabe.pdf",
+    "md": "aufgaben/geografie/windenergie/aufgabe.md",
+    "vorschau": "aufgaben/geografie/windenergie/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/geografie/windenergie/vorschau-seite-1.jpg",
+      "aufgaben/geografie/windenergie/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "yatzi_ohne_wuerfel",
+    "titel": "Yatzi ohne Würfel",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "grundlegende Anforderungen",
+    "zeitbedarf": "45-60min",
+    "zeitMinuten": 52,
+    "regionalbezug": "Graubünden",
+    "themen": [
+      "Wortspiele",
+      "Buchstabenkombinatorik",
+      "Wortschatz"
+    ],
+    "aufgabentyp": "spielbasiert",
+    "offenheitsgrad": "sehr offen",
+    "beschreibung": "Aus den Buchstaben einer Zeitungsschlagzeile so viele neue Wörter wie möglich bilden - ganz ohne Würfel.",
+    "pfad": "aufgaben/deutsch/yatzi_ohne_wuerfel",
+    "pdf": "aufgaben/deutsch/yatzi_ohne_wuerfel/aufgabe.pdf",
+    "md": "aufgaben/deutsch/yatzi_ohne_wuerfel/aufgabe.md",
+    "vorschau": "aufgaben/deutsch/yatzi_ohne_wuerfel/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/deutsch/yatzi_ohne_wuerfel/vorschau-seite-1.jpg",
+      "aufgaben/deutsch/yatzi_ohne_wuerfel/vorschau-seite-2.jpg"
+    ]
+  },
+  {
+    "id": "oeko_haus",
+    "titel": "Öko-Einfamilienhaus",
+    "fach": [
+      "Mathematik",
+      "Geografie"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "erweiterte Anforderungen",
+    "zeitbedarf": "90-120min",
+    "zeitMinuten": 105,
+    "regionalbezug": "Graubünden (Surselva)",
+    "themen": [
+      "Flächen- und Volumenberechnung",
+      "Wasserverbrauch",
+      "Nachhaltiges Bauen"
+    ],
+    "aufgabentyp": "problem-basiert",
+    "offenheitsgrad": "offen",
+    "beschreibung": "Eine Familie will ihr Öko-Haus ganz ohne Wasseranschluss mit Regenwasser versorgen - reicht das übers ganze Jahr?",
+    "pfad": "aufgaben/mathematik/oeko_haus",
+    "pdf": "aufgaben/mathematik/oeko_haus/aufgabe.pdf",
+    "md": "aufgaben/mathematik/oeko_haus/aufgabe.md",
+    "vorschau": "aufgaben/mathematik/oeko_haus/vorschau.jpg",
+    "vorschauSeiten": [
+      "aufgaben/mathematik/oeko_haus/vorschau-seite-1.jpg",
+      "aufgaben/mathematik/oeko_haus/vorschau-seite-2.jpg"
     ]
   }
 ]

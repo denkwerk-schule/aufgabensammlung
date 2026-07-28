@@ -1,0 +1,27 @@
+---
+titel: "Strom aus Holz"
+fach:
+  - Naturlehre
+stufe: Sek 1
+niveau: erweiterte Anforderungen
+zeitbedarf: 60-90min
+regionalbezug: Graubünden (Ilanz, Domat/Ems)
+kontext: Holzenergie, Kraftwärmekoppelung, regionale Ressourcen
+themen:
+  - Erneuerbare Energien
+  - Holzenergie
+  - Berechnungen
+aufgabentyp: problem-basiert
+offenheitsgrad: offen
+beschreibung: "Wie viel Holz bräuchte ein Kraftwerk, um die Stadt Ilanz ein Jahr lang mit Strom zu versorgen?"
+kompetenzen:
+  - Berechnen und Hochrechnen
+  - Ressourcen einschätzen
+materialien:
+  - Foto Kraftwerk
+  - Foto Holzstapel
+  - Schema Kraftwerk
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

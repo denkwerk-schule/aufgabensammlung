@@ -1,0 +1,27 @@
+---
+titel: "Flucht durch die Inseln"
+fach:
+  - Geografie
+stufe: Sek 1
+niveau: erweiterte Anforderungen
+zeitbedarf: 60-90min
+regionalbezug: keiner (Südostasien)
+kontext: 2. Weltkrieg, Kartenmasstab, Navigation
+themen:
+  - Kartenmasstab
+  - Navigation
+  - Berechnungen
+  - Zeitgeschichte
+aufgabentyp: problem-basiert
+offenheitsgrad: offen
+beschreibung: "Ein Pilot ohne Massstab auf der Karte muss seine Fluchtroute durch die Inseln Südostasiens berechnen."
+kompetenzen:
+  - Kartenarbeit
+  - Massstab berechnen
+  - Problemlösen
+materialien:
+  - Karte Südostasien
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

@@ -1,0 +1,29 @@
+---
+titel: "Öko-Einfamilienhaus"
+fach:
+  - Mathematik
+  - Geografie
+stufe: Sek 1
+niveau: erweiterte Anforderungen
+zeitbedarf: 90-120min
+regionalbezug: Graubünden (Surselva)
+kontext: Autonome Wasserversorgung, Regenwassernutzung
+themen:
+  - Flächen- und Volumenberechnung
+  - Wasserverbrauch
+  - Nachhaltiges Bauen
+aufgabentyp: problem-basiert
+offenheitsgrad: offen
+beschreibung: "Eine Familie will ihr Öko-Haus ganz ohne Wasseranschluss mit Regenwasser versorgen - reicht das übers ganze Jahr?"
+kompetenzen:
+  - Berechnen und Schätzen
+  - Pläne lesen
+  - Nachhaltiges Denken
+materialien:
+  - Hausfoto
+  - Lageplan
+  - Grundriss
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

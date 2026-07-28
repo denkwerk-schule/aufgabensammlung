@@ -1,0 +1,29 @@
+---
+titel: "Solarland Schweiz"
+fach:
+  - Geografie
+  - Naturlehre
+stufe: Sek 1
+niveau: erweiterte Anforderungen
+zeitbedarf: 60-90min
+regionalbezug: Schweiz
+kontext: Photovoltaik, Energiewende, Kernkraft-Ersatz
+themen:
+  - Solarenergie
+  - Flächenberechnung
+  - Energiewende
+aufgabentyp: problem-basiert
+offenheitsgrad: offen
+beschreibung: "Wie gross müsste eine Solaranlage sein, um den Strom aller Schweizer Kernkraftwerke zu ersetzen?"
+kompetenzen:
+  - Berechnen und Schätzen
+  - Karten interpretieren
+  - Argumentieren
+materialien:
+  - Foto Solarpark
+  - Schema Photovoltaik
+  - Sonneneinstrahlungskarte
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

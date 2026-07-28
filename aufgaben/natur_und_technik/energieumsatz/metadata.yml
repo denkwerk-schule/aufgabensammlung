@@ -1,0 +1,30 @@
+---
+titel: "Energieumsatz"
+fach:
+  - Naturlehre
+stufe: Sek 1
+niveau: erweiterte Anforderungen
+zeitbedarf: 60-90min
+regionalbezug: keiner
+kontext: Grundumsatz, Leistungsumsatz, Ernährung
+themen:
+  - Energieumsatz
+  - Ernährung
+  - Berechnungen
+  - Einheiten umrechnen
+aufgabentyp: problem-basiert
+offenheitsgrad: offen
+beschreibung: "Berechne deinen eigenen Grund- und Energieumsatz und stelle einen passenden Menüplan zusammen."
+kompetenzen:
+  - Berechnen und Umrechnen
+  - Gesundheitsbewusstsein
+  - Formeln anwenden
+materialien:
+  - Formel
+  - Nährstofftabelle
+  - Foto
+autor: TalentSchule.Surselva
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+hinweis: "Zusammengeführt aus den ursprünglichen Dateien Energieumsatz.pdf und Grundumsatz.pdf, die dieselbe Aufgabe in zwei Layout-Varianten enthielten."
+---

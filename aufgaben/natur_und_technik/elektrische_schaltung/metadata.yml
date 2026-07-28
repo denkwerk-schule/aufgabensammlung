@@ -1,0 +1,27 @@
+---
+titel: "Elektrische Schaltung"
+fach:
+  - Naturlehre
+stufe: Sek 1
+niveau: erweiterte Anforderungen
+zeitbedarf: 90-120min
+regionalbezug: keiner
+kontext: Elektrizitätslehre, Schaltungen, Hausinstallation
+themen:
+  - Elektrische Schaltungen
+  - Serie- und Wechselschaltung
+  - Sicherheit
+aufgabentyp: konstruktionsaufgabe
+offenheitsgrad: offen
+beschreibung: "Plane die komplette Elektroinstallation eines Hauses - von der Zweierschaltung im Kinderzimmer bis zur Werkstatt-Sicherheit."
+kompetenzen:
+  - Schaltpläne lesen und zeichnen
+  - Anwenden von Fachwissen
+  - Problemlösen
+materialien:
+  - Hausplan
+  - Hausplan mit Lampenpositionen
+autor: TalentSchule.Surselva
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

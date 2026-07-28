@@ -1,0 +1,28 @@
+---
+titel: "Windenergie"
+fach:
+  - Geografie
+stufe: Sek 1
+niveau: erweiterte Anforderungen
+zeitbedarf: 60-90min
+regionalbezug: Graubünden (Haldenstein, Surselva)
+kontext: Windkraft, erneuerbare Energien, Landschaftsschutz
+themen:
+  - Windenergie
+  - Erneuerbare Energien
+  - Berechnungen
+  - Landschaftsschutz
+aufgabentyp: problem-basiert
+offenheitsgrad: offen
+beschreibung: "Wie viele Windräder wie in Haldenstein bräuchte es, um die ganze Surselva mit Strom zu versorgen?"
+kompetenzen:
+  - Berechnen und Hochrechnen
+  - Argumentieren und Begründen
+  - Gruppenarbeit
+materialien:
+  - Foto Windrad
+  - Windenergiekarte Schweiz
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

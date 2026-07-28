@@ -1,0 +1,26 @@
+---
+titel: "Deutsch für Chinesen"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: erweiterte Anforderungen
+zeitbedarf: 45-60min
+regionalbezug: keiner
+kontext: Sprachvergleich, Grammatik, Übersetzung
+themen:
+  - Grammatik
+  - Sprachvergleich
+  - Wortarten
+aufgabentyp: sprachanalytisch
+offenheitsgrad: offen
+beschreibung: "Ein absichtlich grammatikfreier Werbetext für einen Deutschkurs - übersetze ihn in korrektes Deutsch."
+kompetenzen:
+  - Grammatikwissen anwenden
+  - Textproduktion
+  - Sprachbewusstsein
+materialien:
+  - Text
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

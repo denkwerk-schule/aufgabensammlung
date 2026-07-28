@@ -1,0 +1,26 @@
+---
+titel: "Stau auf der Autobahn"
+fach:
+  - Mathematik
+stufe: Sek 1
+niveau: grundlegende Anforderungen
+zeitbedarf: 45-60min
+regionalbezug: Graubünden (Landquart)
+kontext: Fermi-Aufgabe, Schätzen, Verkehr
+themen:
+  - Schätzaufgaben
+  - Fermi-Probleme
+  - Verkehr
+aufgabentyp: fermi-problem
+offenheitsgrad: sehr offen
+beschreibung: "Eine kurze Staumeldung im Radio - wie viele Menschen stecken in diesem Stau wirklich fest?"
+kompetenzen:
+  - Schätzen und Berechnen
+  - Annahmen begründen
+materialien:
+  - Kartenausschnitt
+  - Foto Stau
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

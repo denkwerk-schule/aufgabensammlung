@@ -1,0 +1,27 @@
+---
+titel: "Origami-Blume"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: grundlegende Anforderungen
+zeitbedarf: 45-60min
+regionalbezug: keiner
+kontext: Maschinenübersetzung, Anleitungstexte überarbeiten
+themen:
+  - Textüberarbeitung
+  - Anleitungen schreiben
+  - Maschinenübersetzung
+aufgabentyp: sprachanalytisch
+offenheitsgrad: offen
+beschreibung: "Eine holprig übersetzte Origami-Faltanleitung soll in klares, verständliches Deutsch überarbeitet werden."
+kompetenzen:
+  - Textüberarbeitung
+  - Präzises Formulieren
+  - Anleitungen verfassen
+materialien:
+  - Faltanleitung-Grafiken
+  - Foto fertige Blume
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---
