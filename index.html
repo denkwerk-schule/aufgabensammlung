@@ -250,25 +250,33 @@
     justify-content:center;
     gap:7px;
     padding:10px 14px;
-    border-radius:14px;
-    font-size:0.85rem;
-    font-weight:650;
+    border-radius:999px;
+    font-size:0.83rem;
+    font-weight:600;
+    letter-spacing:0.01em;
     text-decoration:none;
-    transition:transform .12s, box-shadow .12s, background .12s;
-    border:1px solid transparent;
+    transition:transform .12s, background .15s, border-color .15s, color .15s;
+    border:1px solid rgba(0,0,0,0.08);
+    background:rgba(255,255,255,0.5);
   }
+  .btn svg{flex-shrink:0;opacity:0.85;}
   .btn:active{transform:scale(0.96);}
   .btn-primary{
-    background:linear-gradient(135deg,var(--amber-500),var(--amber-600));
-    color:white;
-    box-shadow:0 6px 16px rgba(217,119,6,0.35);
+    color:var(--amber-700);
+    border-color:rgba(217,119,6,0.22);
   }
-  .btn-primary:hover{box-shadow:0 8px 22px rgba(217,119,6,0.45);}
+  .btn-primary:hover{
+    background:rgba(245,158,11,0.12);
+    border-color:rgba(217,119,6,0.4);
+  }
   .btn-secondary{
+    color:var(--ink-soft);
+  }
+  .btn-secondary:hover{
     background:rgba(0,0,0,0.05);
+    border-color:rgba(0,0,0,0.14);
     color:var(--ink);
   }
-  .btn-secondary:hover{background:rgba(0,0,0,0.09);}
 
   /* ---------- Empty / loading state ---------- */
   .state-panel{
@@ -311,9 +319,9 @@
   }
   .lightbox.open{display:flex;}
   .lightbox-panel{
-    width:100%;
-    max-width:1080px;
-    padding:26px;
+    width:88vw;
+    max-width:1600px;
+    padding:32px;
     position:relative;
   }
   .lightbox-close{
@@ -350,7 +358,7 @@
   }
   .lightbox-pages{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(2,1fr);
     gap:18px;
   }
   .lightbox-pages img{
@@ -358,6 +366,11 @@
     border-radius:16px;
     display:block;
     box-shadow:0 10px 30px rgba(0,0,0,0.18);
+  }
+
+  @media (max-width:820px){
+    .lightbox-pages{grid-template-columns:1fr;}
+    .lightbox-panel{width:94vw;padding:22px;}
   }
   .lightbox-actions{
     display:flex;
@@ -457,6 +470,9 @@
 
   let allTasks = [];
 
+  const ICON_DOWNLOAD = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4.5 21h15"/></svg>';
+  const ICON_DOC = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>';
+
   async function loadTasks() {
     try {
       const res = await fetch('tasks.json', { cache: 'no-store' });
@@ -500,10 +516,10 @@
     const chips = (task.fach || []).map(f => `<span class="chip">${f}</span>`).join('');
 
     const pdfBtn = task.pdf
-      ? `<a class="btn btn-primary" href="${task.pdf}" download>📥 PDF</a>`
+      ? `<a class="btn btn-primary" href="${task.pdf}" download>${ICON_DOWNLOAD} PDF</a>`
       : '';
     const mdBtn = task.md
-      ? `<a class="btn btn-secondary" href="${task.md}" download>📝 Markdown</a>`
+      ? `<a class="btn btn-secondary" href="${task.md}" download>${ICON_DOC} Markdown</a>`
       : '';
 
     return `
@@ -538,8 +554,8 @@
       ? pages.map((src, i) => `<img src="${src}" alt="${task.titel} - Seite ${i + 1}" loading="lazy">`).join('')
       : '<p style="color:var(--ink-faint);">Keine Vorschau verfügbar.</p>';
 
-    const pdfBtn = task.pdf ? `<a class="btn btn-primary" href="${task.pdf}" download>📥 PDF herunterladen</a>` : '';
-    const mdBtn = task.md ? `<a class="btn btn-secondary" href="${task.md}" download>📝 Markdown herunterladen</a>` : '';
+    const pdfBtn = task.pdf ? `<a class="btn btn-primary" href="${task.pdf}" download>${ICON_DOWNLOAD} PDF herunterladen</a>` : '';
+    const mdBtn = task.md ? `<a class="btn btn-secondary" href="${task.md}" download>${ICON_DOC} Markdown herunterladen</a>` : '';
     document.getElementById('lightboxActions').innerHTML = pdfBtn + mdBtn;
 
     document.getElementById('lightbox').classList.add('open');
