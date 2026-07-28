@@ -26,7 +26,8 @@
     "vorschauSeiten": [
       "aufgaben/geografie/anruf_aus_rovaniemi/vorschau-seite-1.jpg",
       "aufgaben/geografie/anruf_aus_rovaniemi/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geografie/anruf_aus_rovaniemi/material.zip"
   },
   {
     "id": "app_werbung",
@@ -54,7 +55,8 @@
     "vorschauSeiten": [
       "aufgaben/deutsch/app_werbung/vorschau-seite-1.jpg",
       "aufgaben/deutsch/app_werbung/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/deutsch/app_werbung/material.zip"
   },
   {
     "id": "autofreier_sonntag",
@@ -83,7 +85,8 @@
     "vorschauSeiten": [
       "aufgaben/natur_und_technik/autofreier_sonntag/vorschau-seite-1.jpg",
       "aufgaben/natur_und_technik/autofreier_sonntag/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/natur_und_technik/autofreier_sonntag/material.zip"
   },
   {
     "id": "deutsch_fuer_chinesen",
@@ -111,7 +114,8 @@
     "vorschauSeiten": [
       "aufgaben/deutsch/deutsch_fuer_chinesen/vorschau-seite-1.jpg",
       "aufgaben/deutsch/deutsch_fuer_chinesen/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": null
   },
   {
     "id": "schweiz_2040",
@@ -141,7 +145,8 @@
     "vorschauSeiten": [
       "aufgaben/geschichte/schweiz_2040/vorschau-seite-1.jpg",
       "aufgaben/geschichte/schweiz_2040/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geschichte/schweiz_2040/material.zip"
   },
   {
     "id": "ein-haus-zwei-welten",
@@ -171,7 +176,8 @@
     "vorschauSeiten": [
       "aufgaben/geschichte/ein-haus-zwei-welten/vorschau-seite-1.jpg",
       "aufgaben/geschichte/ein-haus-zwei-welten/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geschichte/ein-haus-zwei-welten/material.zip"
   },
   {
     "id": "elektrische_schaltung",
@@ -199,7 +205,8 @@
     "vorschauSeiten": [
       "aufgaben/natur_und_technik/elektrische_schaltung/vorschau-seite-1.jpg",
       "aufgaben/natur_und_technik/elektrische_schaltung/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/natur_und_technik/elektrische_schaltung/material.zip"
   },
   {
     "id": "energiehaushalt_erde",
@@ -229,7 +236,8 @@
     "vorschauSeiten": [
       "aufgaben/natur_und_technik/energiehaushalt_erde/vorschau-seite-1.jpg",
       "aufgaben/natur_und_technik/energiehaushalt_erde/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/natur_und_technik/energiehaushalt_erde/material.zip"
   },
   {
     "id": "energieumsatz",
@@ -258,7 +266,8 @@
     "vorschauSeiten": [
       "aufgaben/natur_und_technik/energieumsatz/vorschau-seite-1.jpg",
       "aufgaben/natur_und_technik/energieumsatz/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/natur_und_technik/energieumsatz/material.zip"
   },
   {
     "id": "flaschenpost",
@@ -288,7 +297,8 @@
     "vorschauSeiten": [
       "aufgaben/geografie/flaschenpost/vorschau-seite-1.jpg",
       "aufgaben/geografie/flaschenpost/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geografie/flaschenpost/material.zip"
   },
   {
     "id": "flucht_durch_die_inseln",
@@ -317,7 +327,8 @@
     "vorschauSeiten": [
       "aufgaben/geografie/flucht_durch_die_inseln/vorschau-seite-1.jpg",
       "aufgaben/geografie/flucht_durch_die_inseln/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geografie/flucht_durch_die_inseln/material.zip"
   },
   {
     "id": "gerechte_verteilung",
@@ -345,7 +356,8 @@
     "vorschauSeiten": [
       "aufgaben/geografie/gerechte_verteilung/vorschau-seite-1.jpg",
       "aufgaben/geografie/gerechte_verteilung/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geografie/gerechte_verteilung/material.zip"
   },
   {
     "id": "millionenschatz",
@@ -373,7 +385,8 @@
     "vorschauSeiten": [
       "aufgaben/deutsch/millionenschatz/vorschau-seite-1.jpg",
       "aufgaben/deutsch/millionenschatz/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/deutsch/millionenschatz/material.zip"
   },
   {
     "id": "origami_faltblume",
@@ -401,7 +414,8 @@
     "vorschauSeiten": [
       "aufgaben/deutsch/origami_faltblume/vorschau-seite-1.jpg",
       "aufgaben/deutsch/origami_faltblume/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/deutsch/origami_faltblume/material.zip"
   },
   {
     "id": "schweizerreise",
@@ -430,7 +444,8 @@
     "vorschauSeiten": [
       "aufgaben/geografie/schweizerreise/vorschau-seite-1.jpg",
       "aufgaben/geografie/schweizerreise/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geografie/schweizerreise/material.zip"
   },
   {
     "id": "signalstafette",
@@ -458,7 +473,8 @@
     "vorschauSeiten": [
       "aufgaben/geografie/signalstafette/vorschau-seite-1.jpg",
       "aufgaben/geografie/signalstafette/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geografie/signalstafette/material.zip"
   },
   {
     "id": "solarland_schweiz",
@@ -487,7 +503,8 @@
     "vorschauSeiten": [
       "aufgaben/geografie/solarland_schweiz/vorschau-seite-1.jpg",
       "aufgaben/geografie/solarland_schweiz/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geografie/solarland_schweiz/material.zip"
   },
   {
     "id": "stau",
@@ -515,7 +532,8 @@
     "vorschauSeiten": [
       "aufgaben/mathematik/stau/vorschau-seite-1.jpg",
       "aufgaben/mathematik/stau/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/mathematik/stau/material.zip"
   },
   {
     "id": "strom_aus_holz",
@@ -543,7 +561,8 @@
     "vorschauSeiten": [
       "aufgaben/natur_und_technik/strom_aus_holz/vorschau-seite-1.jpg",
       "aufgaben/natur_und_technik/strom_aus_holz/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/natur_und_technik/strom_aus_holz/material.zip"
   },
   {
     "id": "vorderrhein_vs_hinterrhein",
@@ -572,7 +591,8 @@
     "vorschauSeiten": [
       "aufgaben/geografie/vorderrhein_vs_hinterrhein/vorschau-seite-1.jpg",
       "aufgaben/geografie/vorderrhein_vs_hinterrhein/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geografie/vorderrhein_vs_hinterrhein/material.zip"
   },
   {
     "id": "wasser_sparen",
@@ -602,7 +622,8 @@
     "vorschauSeiten": [
       "aufgaben/natur_und_technik/wasser_sparen/vorschau-seite-1.jpg",
       "aufgaben/natur_und_technik/wasser_sparen/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/natur_und_technik/wasser_sparen/material.zip"
   },
   {
     "id": "weekend_trip",
@@ -630,7 +651,8 @@
     "vorschauSeiten": [
       "aufgaben/deutsch/weekend_trip/vorschau-seite-1.jpg",
       "aufgaben/deutsch/weekend_trip/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/deutsch/weekend_trip/material.zip"
   },
   {
     "id": "erfindungen",
@@ -658,7 +680,8 @@
     "vorschauSeiten": [
       "aufgaben/geschichte/erfindungen/vorschau-seite-1.jpg",
       "aufgaben/geschichte/erfindungen/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geschichte/erfindungen/material.zip"
   },
   {
     "id": "windenergie",
@@ -687,7 +710,8 @@
     "vorschauSeiten": [
       "aufgaben/geografie/windenergie/vorschau-seite-1.jpg",
       "aufgaben/geografie/windenergie/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/geografie/windenergie/material.zip"
   },
   {
     "id": "yatzi_ohne_wuerfel",
@@ -715,7 +739,8 @@
     "vorschauSeiten": [
       "aufgaben/deutsch/yatzi_ohne_wuerfel/vorschau-seite-1.jpg",
       "aufgaben/deutsch/yatzi_ohne_wuerfel/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/deutsch/yatzi_ohne_wuerfel/material.zip"
   },
   {
     "id": "oeko_haus",
@@ -744,6 +769,7 @@
     "vorschauSeiten": [
       "aufgaben/mathematik/oeko_haus/vorschau-seite-1.jpg",
       "aufgaben/mathematik/oeko_haus/vorschau-seite-2.jpg"
-    ]
+    ],
+    "material": "aufgaben/mathematik/oeko_haus/material.zip"
   }
 ]

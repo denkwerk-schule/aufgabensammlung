@@ -27,6 +27,7 @@
       "lernfelder/deutsch/die-hoehle-der-loewen/vorschau-seite-1.jpg",
       "lernfelder/deutsch/die-hoehle-der-loewen/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Beste Erfindung der Menschheit",
@@ -68,6 +69,7 @@
       "lernfelder/deutsch/hoerspiele/vorschau-seite-1.jpg",
       "lernfelder/deutsch/hoerspiele/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Filmkritik schreiben",
@@ -109,6 +111,7 @@
       "lernfelder/deutsch/influencer/vorschau-seite-1.jpg",
       "lernfelder/deutsch/influencer/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Werbeaktion-Präsentation",
@@ -150,6 +153,7 @@
       "lernfelder/deutsch/kreatives-schreiben/vorschau-seite-1.jpg",
       "lernfelder/deutsch/kreatives-schreiben/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Akrostichon",
@@ -193,6 +197,7 @@
       "lernfelder/deutsch/leichte-sprache/vorschau-seite-1.jpg",
       "lernfelder/deutsch/leichte-sprache/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Entstehung der leichten Sprache",
@@ -237,6 +242,7 @@
       "lernfelder/deutsch/podcast-und-co/vorschau-seite-1.jpg",
       "lernfelder/deutsch/podcast-und-co/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Anleitung zum Podcast laden",
@@ -277,6 +283,7 @@
       "lernfelder/deutsch/schlaue-koepfe/vorschau-seite-1.jpg",
       "lernfelder/deutsch/schlaue-koepfe/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Von der Recherche zum Porträt",
@@ -318,6 +325,7 @@
       "lernfelder/deutsch/schraege-typen/vorschau-seite-1.jpg",
       "lernfelder/deutsch/schraege-typen/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Höre-Empfehlung zu Cédric Waldburger",
@@ -359,6 +367,7 @@
       "lernfelder/deutsch/traeume/vorschau-seite-1.jpg",
       "lernfelder/deutsch/traeume/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Träume aufschreiben",
@@ -401,6 +410,7 @@
       "lernfelder/deutsch/ver-dichtete-worte/vorschau-seite-1.jpg",
       "lernfelder/deutsch/ver-dichtete-worte/vorschau-seite-2.jpg"
     ],
+    "material": null,
     "typ": "lernfeld",
     "moeglichkeiten": [
       "Ein altes Gedicht modernisieren",

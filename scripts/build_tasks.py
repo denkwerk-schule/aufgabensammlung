@@ -17,6 +17,7 @@ Nutzung:
 import json
 import subprocess
 import sys
+import zipfile
 from pathlib import Path
 
 try:
@@ -116,6 +117,39 @@ def ensure_previews(item_dir: Path) -> list[str]:
     return seiten
 
 
+def ensure_material_zip(item_dir: Path) -> str | None:
+    """Buendelt aufgabe.md + bilder/ in material.zip, damit Nutzer, die nur das
+    Markdown herunterladen, auch an die referenzierten Bilder kommen (die
+    Bildpfade in aufgabe.md sind relativ zu bilder/, das ZIP behaelt daher
+    genau diese Struktur bei). Wird nur erzeugt/aktualisiert, wenn ein
+    bilder/-Ordner mit Dateien existiert; bei reinen Text-Aufgaben ohne
+    Bilder entsteht kein ZIP und kein dritter Button auf der Website."""
+    bilder_dir = item_dir / "bilder"
+    md = item_dir / "aufgabe.md"
+    zip_path = item_dir / "material.zip"
+
+    if not bilder_dir.is_dir() or not md.exists():
+        return None
+
+    bild_dateien = [p for p in bilder_dir.rglob("*") if p.is_file()]
+    if not bild_dateien:
+        return None
+
+    quellen = [md] + bild_dateien
+    if zip_path.exists():
+        zip_mtime = zip_path.stat().st_mtime
+        if all(p.stat().st_mtime <= zip_mtime for p in quellen):
+            return "material.zip"
+
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+        zf.write(md, arcname="aufgabe.md")
+        for bild in bild_dateien:
+            zf.write(bild, arcname=str(Path("bilder") / bild.relative_to(bilder_dir)))
+
+    print(f"  Material-ZIP erzeugt: {zip_path.relative_to(ROOT)}")
+    return "material.zip"
+
+
 def load_metadata(metadata_file: Path):
     raw = metadata_file.read_text(encoding="utf-8")
     # Dateien sind im YAML-Frontmatter-Format: --- ... ---
@@ -156,6 +190,7 @@ def build_collection(source_dir: Path, output_file: Path, extra_fields=None):
 
         seiten = ensure_previews(item_dir)
         preview = "vorschau.jpg" if (item_dir / "vorschau.jpg").exists() else None
+        material = ensure_material_zip(item_dir)
 
         item = {
             "id": item_dir.name,
@@ -175,6 +210,7 @@ def build_collection(source_dir: Path, output_file: Path, extra_fields=None):
             "md": f"{rel_path}/aufgabe.md" if md_exists else None,
             "vorschau": f"{rel_path}/{preview}" if preview else None,
             "vorschauSeiten": [f"{rel_path}/{s}" for s in seiten],
+            "material": f"{rel_path}/{material}" if material else None,
         }
         for key in extra_fields:
             item[key] = data.get(key, [] if key in ("moeglichkeiten", "anschluss") else "")
