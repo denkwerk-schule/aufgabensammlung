@@ -1,0 +1,37 @@
+---
+titel: "Mit Texten arbeiten"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach gewähltem Auftrag)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Textnachbearbeitung
+themen:
+  - Textnachbearbeitung
+  - Auftragssammlung
+  - Methode
+typ: baustein
+beschreibung: "16 Arbeitsaufträge zur Nachbearbeitung eines Textes - vom Glossar über den Lückentext bis zum Leserbrief."
+kompetenzen:
+  - Textverständnis
+  - Kreatives Schreiben
+  - Eigene Auswahl treffen
+schritte:
+  - titel: "Glossar erstellen"
+    text: "Zentrale Begriffe alphabetisch geordnet aufschreiben und erklären."
+  - titel: "Fragen formulieren"
+    text: "Verständnis- und weiterführende Fragen zum Text stellen."
+  - titel: "Lückentext"
+    text: "Text in einen sinnvollen Lückentext umarbeiten."
+  - titel: "Fortsetzung/Vorgeschichte"
+    text: "Zum Text eine Fortsetzung oder Vorgeschichte schreiben."
+  - titel: "Leserbrief"
+    text: "Leserbrief mit eigener Stellungnahme zum Text schreiben."
+  - titel: "Steckbrief"
+    text: "Steckbrief mit den W-Fragen zum Textinhalt erstellen."
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

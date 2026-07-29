@@ -1,0 +1,31 @@
+---
+titel: "Filmkritik schreiben"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Film)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Filmanalyse, Rezension
+themen:
+  - Filmkritik
+  - Rezension
+  - Medienkompetenz
+typ: baustein
+beschreibung: "Wie eine Filmkritik aufgebaut ist: Information, Interpretation und Bewertung als die drei zentralen Bestandteile."
+kompetenzen:
+  - Rezension schreiben
+  - Filmische Mittel deuten
+  - Begründet urteilen
+schritte:
+  - titel: "Information"
+    text: "Eckdaten zum Film und eine kurze, spannungswahrende Inhaltsangabe liefern."
+  - titel: "Interpretation"
+    text: "Inhaltliche Aussage und filmische Mittel (Kamera, Schnitt, Musik) deuten."
+  - titel: "Bewertung"
+    text: "Ein begründetes Urteil fällen und eine Zielgruppenempfehlung abgeben."
+quelle: "www.planet-schule.de"
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

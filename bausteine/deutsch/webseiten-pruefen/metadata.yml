@@ -1,0 +1,33 @@
+---
+titel: "Webseiten prüfen"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Recherche)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Quellenkritik
+themen:
+  - Webseiten prüfen
+  - Quellenkritik
+  - Recherche
+typ: baustein
+beschreibung: "Relevanz-, Sicherheits- und Qualitäts-Check, um Internetquellen zuverlässig zu bewerten."
+kompetenzen:
+  - Quellenkritik
+  - Informationskompetenz
+  - Bewerten
+schritte:
+  - titel: "Relevanz-Check"
+    text: "Prüfen, ob die Webseite die eigene Fragestellung tatsächlich beantwortet."
+  - titel: "Sicherheits-Check"
+    text: "Impressum und Urheberschaft der Seite prüfen."
+  - titel: "Qualitäts-Check"
+    text: "Verbleibende Quellen nach Relevanz und Leserfreundlichkeit vergleichen."
+bausteine:
+  - lesestrategien
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

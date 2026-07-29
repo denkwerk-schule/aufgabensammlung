@@ -235,8 +235,15 @@
       "Modul Zeitung",
       "Lernfeld Leben mit einer Behinderung"
     ],
-    "bausteine": [],
-    "bausteineLinks": []
+    "bausteine": [
+      "satzproben-anwenden"
+    ],
+    "bausteineLinks": [
+      {
+        "id": "satzproben-anwenden",
+        "titel": "Satzproben anwenden"
+      }
+    ]
   },
   {
     "id": "podcast-und-co",
@@ -418,8 +425,15 @@
     "anschluss": [
       "Lyrik"
     ],
-    "bausteine": [],
-    "bausteineLinks": []
+    "bausteine": [
+      "erzaehltexte-untersuchen"
+    ],
+    "bausteineLinks": [
+      {
+        "id": "erzaehltexte-untersuchen",
+        "titel": "Erzähltexte untersuchen"
+      }
+    ]
   },
   {
     "id": "ver-dichtete-worte",

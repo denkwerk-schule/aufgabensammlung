@@ -1,0 +1,33 @@
+---
+titel: "Gruppenpuzzle"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (mehrere Lektionen)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Kooperative Lernmethode
+themen:
+  - Gruppenpuzzle
+  - Kooperatives Lernen
+  - Methode
+typ: baustein
+beschreibung: "Think - Pair - Share: In drei Phasen gemeinsam Wissen aneignen und an die Stammgruppe weitergeben."
+kompetenzen:
+  - Kooperation
+  - Wissen vermitteln
+  - Selbstorganisation
+schritte:
+  - titel: "Individuelle Erarbeitung"
+    text: "Teilgebiet individuell erarbeiten und zentrale Informationen herausarbeiten (Think)."
+  - titel: "Expertengruppe"
+    text: "Ergebnisse mit anderen Experten des gleichen Teilgebiets vergleichen und absichern (Pair)."
+  - titel: "Stammgruppe"
+    text: "Das eigene Wissen den anderen Gruppenmitgliedern vermitteln (Share)."
+bausteine:
+  - texte-visualisieren
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

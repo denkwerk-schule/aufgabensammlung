@@ -1,0 +1,31 @@
+---
+titel: "Erzähltexte untersuchen"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Erzähltext)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Textanalyse
+themen:
+  - Erzähltext
+  - Textanalyse
+  - Interpretation
+typ: baustein
+beschreibung: "Leitfragen zu Inhalt, Erzählperspektive, Aufbau, Sprache und Hintergrund für die Analyse epischer Texte."
+kompetenzen:
+  - Textanalyse
+  - Interpretation
+  - Objektiv/subjektiv trennen
+schritte:
+  - titel: "Einleitung"
+    text: "Titel, Autor, Thema und ersten Eindruck festhalten."
+  - titel: "Hauptteil"
+    text: "Leitfragen zu Inhalt, Erzählperspektive, Aufbau, Sprache und Hintergrund beantworten."
+  - titel: "Schluss"
+    text: "Schlussresümee oder Fazit formulieren."
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

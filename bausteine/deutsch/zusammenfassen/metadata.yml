@@ -1,0 +1,33 @@
+---
+titel: "Zusammenfassen"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Text)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Lernstrategie
+themen:
+  - Zusammenfassen
+  - Kernaussagen
+  - Stichworte
+typ: baustein
+beschreibung: "Drei Verdichtungsgrade - Fliesstext, Kernaussagen und Stichworte - für unterschiedliche Lernzwecke."
+kompetenzen:
+  - Selektieren
+  - Eigene Formulierungen finden
+  - Lernstrategie
+schritte:
+  - titel: "Fliesstext"
+    text: "Knappe, ganze Sätze, die auch ohne den Volltext verständlich sind."
+  - titel: "Kernaussagen"
+    text: "Stichwort plus elliptischer Kurzsatz als Kompromiss zwischen Fliesstext und Stichwortliste."
+  - titel: "Stichworte"
+    text: "Sehr knappe Einzelbegriffe für einfache Texte und als Repetitionshilfe."
+bausteine:
+  - informierendes-lesen
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

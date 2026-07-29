@@ -1,0 +1,29 @@
+---
+titel: "Grafiken und Co."
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Schaubild)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Grafiken lesen
+themen:
+  - Grafiken
+  - Diagramme
+  - Schaubilder
+typ: baustein
+beschreibung: "Wie man Diagramme, Schaubilder und Infografiken systematisch liest und ihre Zahlen richtig einordnet."
+kompetenzen:
+  - Grafiken lesen
+  - Zahlen einordnen
+  - Quellenkritik
+schritte:
+  - titel: "Anleitung"
+    text: "Thema, Legende und Diagrammart eines Schaubilds klären."
+  - titel: "Zahlen untersuchen"
+    text: "Absolute Zahlen vs. Prozentwerte, Zeitraum und auffällige Werte analysieren."
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

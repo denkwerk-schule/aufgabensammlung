@@ -1,0 +1,41 @@
+---
+titel: "Lesestrategien"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Lesezweck)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Lesetechniken
+themen:
+  - Lesestrategien
+  - Lesetechniken
+  - Methode
+typ: baustein
+beschreibung: "Übersicht über sechs Lesetechniken - vom orientierenden Skimming bis zum kombinierten Lesen - je nach Lesezweck."
+kompetenzen:
+  - Lesekompetenz
+  - Textverständnis
+  - Selbstorganisation
+schritte:
+  - titel: "Orientierendes Lesen"
+    text: "Text anhand Überschriften und Hervorhebungen überfliegen (Skimming)."
+  - titel: "Suchendes Lesen"
+    text: "Gezielt nach Schlüsselwörtern und Zahlen suchen (Scanning)."
+  - titel: "Kursorisches Lesen"
+    text: "Text quer überfliegen, dann gezielt erste/letzte Sätze der Abschnitte lesen."
+  - titel: "Informierendes Lesen"
+    text: "Text gründlich lesen und mit Unterstreichungen/Randnotizen bearbeiten."
+  - titel: "Analytisches Lesen"
+    text: "Intensive Analyse und Auseinandersetzung mit dem Text für fundiertes Verständnis."
+  - titel: "Kombiniertes Lesen"
+    text: "Eigene Lieblingsmethode aus mehreren Techniken zusammenstellen."
+bausteine:
+  - informierendes-lesen
+  - zusammenfassen
+hinweis: "Ersetzt die ältere Karte 'informierendes Lesen' (2012) mit demselben Lesetechniken-Überblick; deren Inhalt wurde hier aktualisiert und um Verweise auf die eigenständigen Bausteine 'Informierendes Lesen' und 'Zusammenfassen' ergänzt."
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

@@ -1,0 +1,33 @@
+---
+titel: "Medientexte analysieren"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Medienbeitrag)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Medienkompetenz
+themen:
+  - Medientexte
+  - Journalismus
+  - W-Fragen
+typ: baustein
+beschreibung: "Medientypen, Beitragssorten, Aufbau einer Nachricht und die 7 W-Fragen für die Analyse von Medienbeiträgen."
+kompetenzen:
+  - Medienkompetenz
+  - Textsorten unterscheiden
+  - Analysieren
+schritte:
+  - titel: "Tatsachenorientierte Beiträge"
+    text: "Nachricht, Bericht, Meldung, Dokumentation, Interview, Reportage unterscheiden."
+  - titel: "Meinungsorientierte Beiträge"
+    text: "Leitartikel, Kolumne, Kommentar, Glosse unterscheiden."
+  - titel: "Aufbau einer Nachricht"
+    text: "Dachzeile, Schlagzeile, Lead, Nachrichtenkörper und Bildteil erkennen."
+  - titel: "7 W-Fragen"
+    text: "Wer, was, wo, wann, wie, warum, welche Folgen - die Grundstruktur jedes Berichts."
+quelle: "frei zusammengestellt mit Materialien aus Sprachwelten. Deutsch 1"
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

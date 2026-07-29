@@ -1,0 +1,31 @@
+---
+titel: "Texte visualisieren"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Text)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Lernstrategie
+themen:
+  - Visualisieren
+  - MindMap
+  - Lernstrategie
+typ: baustein
+beschreibung: "Wie das Transformieren von Text in Grafiken (MindMap, Lernbild, ConceptMap) das Lernen und Behalten fördert."
+kompetenzen:
+  - Wissen transformieren
+  - Visualisieren
+  - Strukturieren
+schritte:
+  - titel: "Texte als Input"
+    text: "Textinhalt lesen und im Kopf verarbeiten."
+  - titel: "Grafiken als Output"
+    text: "Verbalen Input in eine visuelle Form übertragen."
+  - titel: "Grundtypen von Lerngrafiken"
+    text: "MindMap, Lernbild oder ConceptMap als Gestaltungsform wählen."
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

@@ -1,0 +1,32 @@
+---
+titel: "Informierendes Lesen"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Fachtext)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Textbearbeitung
+themen:
+  - Informierendes Lesen
+  - Textbearbeitung
+  - Markieren
+typ: baustein
+beschreibung: "Mit drei Symbolen, gezieltem Unterstreichen und Randnotizen anspruchsvolle Fachtexte wirklich durchdringen."
+kompetenzen:
+  - Textverständnis
+  - Selektieren
+  - Vernetzen mit Vorwissen
+schritte:
+  - titel: "Symbole"
+    text: "Mit drei Randsymbolen unbekannte, wichtige und klare Textstellen kennzeichnen."
+  - titel: "Unterstreichen"
+    text: "Wichtige Sätze statt einzelner Wörter gezielt unterstreichen."
+  - titel: "Randnotizen"
+    text: "Am Blattrand Querverweise, Beispiele und eigenes Vorwissen notieren."
+hinweis: "Ersetzt die ältere, inhaltsgleiche Karte 'Texte bearbeiten' (älteres Layout, gleicher Text); diese Version im aktuellen Baustein-Layout wird als kanonische Fassung geführt."
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

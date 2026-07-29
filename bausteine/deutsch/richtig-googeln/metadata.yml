@@ -1,0 +1,28 @@
+---
+titel: "Richtig Googeln"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (als Nachschlagewerk)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Suchoperatoren
+themen:
+  - Google
+  - Suchoperatoren
+  - Recherche
+typ: baustein
+beschreibung: "Basis- und erweiterte Suchoperatoren, mit denen sich Google-Suchergebnisse gezielt eingrenzen lassen."
+kompetenzen:
+  - Recherche
+  - Informationskompetenz
+schritte:
+  - titel: "Basis-Operatoren"
+    text: "Mit +, -, |, Anführungszeichen, * und .. gezielter suchen."
+  - titel: "Erweiterte Suchoperatoren"
+    text: "Mit allintext, filetype, site, cache & Co. wie ein Profi recherchieren."
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

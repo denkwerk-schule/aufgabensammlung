@@ -1,5 +1,251 @@
 [
   {
+    "id": "beschreibungen",
+    "titel": "Beschreibungen",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Beschreibungsauftrag)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Beschreibung",
+      "Sachtext",
+      "Methode"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Fünf Schritte von der Beobachtung zum druckreifen Sach-, Personen- oder Bildbeschreibungstext.",
+    "pfad": "bausteine/deutsch/beschreibungen",
+    "pdf": "bausteine/deutsch/beschreibungen/aufgabe.pdf",
+    "md": "bausteine/deutsch/beschreibungen/aufgabe.md",
+    "vorschau": "bausteine/deutsch/beschreibungen/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/beschreibungen/vorschau-seite-1.jpg",
+      "bausteine/deutsch/beschreibungen/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Vorbereiten",
+        "text": "Genaue Beobachtung und Erstellen einer Stichwortliste mit treffenden Fachbegriffen."
+      },
+      {
+        "titel": "Strukturieren",
+        "text": "Die gesammelten Begriffe nach einem Ordnungsprinzip in eine Reihenfolge bringen."
+      },
+      {
+        "titel": "Entwerfen",
+        "text": "Ersten Textentwurf im Präsens schreiben, streng zwischen Fakten und Vermutungen trennen."
+      },
+      {
+        "titel": "Gliedern",
+        "text": "Text mit Einleitung und Schluss zum vollständigen Dreiteiler ergänzen."
+      },
+      {
+        "titel": "Überarbeiten",
+        "text": "Zweite Durchsicht anhand einer Checkliste (Gliederung, Präsens, Sprache, Rechtschreibung)."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "erzaehltexte-untersuchen",
+    "titel": "Erzähltexte untersuchen",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Erzähltext)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Erzähltext",
+      "Textanalyse",
+      "Interpretation"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Leitfragen zu Inhalt, Erzählperspektive, Aufbau, Sprache und Hintergrund für die Analyse epischer Texte.",
+    "pfad": "bausteine/deutsch/erzaehltexte-untersuchen",
+    "pdf": "bausteine/deutsch/erzaehltexte-untersuchen/aufgabe.pdf",
+    "md": "bausteine/deutsch/erzaehltexte-untersuchen/aufgabe.md",
+    "vorschau": "bausteine/deutsch/erzaehltexte-untersuchen/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/erzaehltexte-untersuchen/vorschau-seite-1.jpg",
+      "bausteine/deutsch/erzaehltexte-untersuchen/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Einleitung",
+        "text": "Titel, Autor, Thema und ersten Eindruck festhalten."
+      },
+      {
+        "titel": "Hauptteil",
+        "text": "Leitfragen zu Inhalt, Erzählperspektive, Aufbau, Sprache und Hintergrund beantworten."
+      },
+      {
+        "titel": "Schluss",
+        "text": "Schlussresümee oder Fazit formulieren."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "filmkritik-schreiben",
+    "titel": "Filmkritik schreiben",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Film)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Filmkritik",
+      "Rezension",
+      "Medienkompetenz"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Wie eine Filmkritik aufgebaut ist: Information, Interpretation und Bewertung als die drei zentralen Bestandteile.",
+    "pfad": "bausteine/deutsch/filmkritik-schreiben",
+    "pdf": "bausteine/deutsch/filmkritik-schreiben/aufgabe.pdf",
+    "md": "bausteine/deutsch/filmkritik-schreiben/aufgabe.md",
+    "vorschau": "bausteine/deutsch/filmkritik-schreiben/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/filmkritik-schreiben/vorschau-seite-1.jpg",
+      "bausteine/deutsch/filmkritik-schreiben/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Information",
+        "text": "Eckdaten zum Film und eine kurze, spannungswahrende Inhaltsangabe liefern."
+      },
+      {
+        "titel": "Interpretation",
+        "text": "Inhaltliche Aussage und filmische Mittel (Kamera, Schnitt, Musik) deuten."
+      },
+      {
+        "titel": "Bewertung",
+        "text": "Ein begründetes Urteil fällen und eine Zielgruppenempfehlung abgeben."
+      }
+    ],
+    "quelle": "www.planet-schule.de",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "grafiken-und-co",
+    "titel": "Grafiken und Co.",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Schaubild)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Grafiken",
+      "Diagramme",
+      "Schaubilder"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Wie man Diagramme, Schaubilder und Infografiken systematisch liest und ihre Zahlen richtig einordnet.",
+    "pfad": "bausteine/deutsch/grafiken-und-co",
+    "pdf": "bausteine/deutsch/grafiken-und-co/aufgabe.pdf",
+    "md": "bausteine/deutsch/grafiken-und-co/aufgabe.md",
+    "vorschau": "bausteine/deutsch/grafiken-und-co/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/grafiken-und-co/vorschau-seite-1.jpg",
+      "bausteine/deutsch/grafiken-und-co/vorschau-seite-2.jpg"
+    ],
+    "material": "bausteine/deutsch/grafiken-und-co/material.zip",
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Anleitung",
+        "text": "Thema, Legende und Diagrammart eines Schaubilds klären."
+      },
+      {
+        "titel": "Zahlen untersuchen",
+        "text": "Absolute Zahlen vs. Prozentwerte, Zeitraum und auffällige Werte analysieren."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "gruppenpuzzle",
+    "titel": "Gruppenpuzzle",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (mehrere Lektionen)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Gruppenpuzzle",
+      "Kooperatives Lernen",
+      "Methode"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Think - Pair - Share: In drei Phasen gemeinsam Wissen aneignen und an die Stammgruppe weitergeben.",
+    "pfad": "bausteine/deutsch/gruppenpuzzle",
+    "pdf": "bausteine/deutsch/gruppenpuzzle/aufgabe.pdf",
+    "md": "bausteine/deutsch/gruppenpuzzle/aufgabe.md",
+    "vorschau": "bausteine/deutsch/gruppenpuzzle/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/gruppenpuzzle/vorschau-seite-1.jpg",
+      "bausteine/deutsch/gruppenpuzzle/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Individuelle Erarbeitung",
+        "text": "Teilgebiet individuell erarbeiten und zentrale Informationen herausarbeiten (Think)."
+      },
+      {
+        "titel": "Expertengruppe",
+        "text": "Ergebnisse mit anderen Experten des gleichen Teilgebiets vergleichen und absichern (Pair)."
+      },
+      {
+        "titel": "Stammgruppe",
+        "text": "Das eigene Wissen den anderen Gruppenmitgliedern vermitteln (Share)."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [
+      "texte-visualisieren"
+    ],
+    "bausteineLinks": [
+      {
+        "id": "texte-visualisieren",
+        "titel": "Texte visualisieren"
+      }
+    ]
+  },
+  {
     "id": "hoerstrategien",
     "titel": "Hörstrategien",
     "fach": [
@@ -46,6 +292,477 @@
         "text": "Überprüft zu zweit, ob ihr den Inhalt richtig verstanden habt, und vergleicht eure Ergebnisse."
       }
     ],
-    "quelle": "Die Sprachstarken 7-9, Klett und Balmer AG, Baar 2016"
+    "quelle": "Die Sprachstarken 7-9, Klett und Balmer AG, Baar 2016",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "informierendes-lesen",
+    "titel": "Informierendes Lesen",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Fachtext)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Informierendes Lesen",
+      "Textbearbeitung",
+      "Markieren"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Mit drei Symbolen, gezieltem Unterstreichen und Randnotizen anspruchsvolle Fachtexte wirklich durchdringen.",
+    "pfad": "bausteine/deutsch/informierendes-lesen",
+    "pdf": "bausteine/deutsch/informierendes-lesen/aufgabe.pdf",
+    "md": "bausteine/deutsch/informierendes-lesen/aufgabe.md",
+    "vorschau": "bausteine/deutsch/informierendes-lesen/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/informierendes-lesen/vorschau-seite-1.jpg",
+      "bausteine/deutsch/informierendes-lesen/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Symbole",
+        "text": "Mit drei Randsymbolen unbekannte, wichtige und klare Textstellen kennzeichnen."
+      },
+      {
+        "titel": "Unterstreichen",
+        "text": "Wichtige Sätze statt einzelner Wörter gezielt unterstreichen."
+      },
+      {
+        "titel": "Randnotizen",
+        "text": "Am Blattrand Querverweise, Beispiele und eigenes Vorwissen notieren."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "lesestrategien",
+    "titel": "Lesestrategien",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Lesezweck)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Lesestrategien",
+      "Lesetechniken",
+      "Methode"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Übersicht über sechs Lesetechniken - vom orientierenden Skimming bis zum kombinierten Lesen - je nach Lesezweck.",
+    "pfad": "bausteine/deutsch/lesestrategien",
+    "pdf": "bausteine/deutsch/lesestrategien/aufgabe.pdf",
+    "md": "bausteine/deutsch/lesestrategien/aufgabe.md",
+    "vorschau": "bausteine/deutsch/lesestrategien/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/lesestrategien/vorschau-seite-1.jpg",
+      "bausteine/deutsch/lesestrategien/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Orientierendes Lesen",
+        "text": "Text anhand Überschriften und Hervorhebungen überfliegen (Skimming)."
+      },
+      {
+        "titel": "Suchendes Lesen",
+        "text": "Gezielt nach Schlüsselwörtern und Zahlen suchen (Scanning)."
+      },
+      {
+        "titel": "Kursorisches Lesen",
+        "text": "Text quer überfliegen, dann gezielt erste/letzte Sätze der Abschnitte lesen."
+      },
+      {
+        "titel": "Informierendes Lesen",
+        "text": "Text gründlich lesen und mit Unterstreichungen/Randnotizen bearbeiten."
+      },
+      {
+        "titel": "Analytisches Lesen",
+        "text": "Intensive Analyse und Auseinandersetzung mit dem Text für fundiertes Verständnis."
+      },
+      {
+        "titel": "Kombiniertes Lesen",
+        "text": "Eigene Lieblingsmethode aus mehreren Techniken zusammenstellen."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [
+      "informierendes-lesen",
+      "zusammenfassen"
+    ],
+    "bausteineLinks": [
+      {
+        "id": "informierendes-lesen",
+        "titel": "Informierendes Lesen"
+      },
+      {
+        "id": "zusammenfassen",
+        "titel": "Zusammenfassen"
+      }
+    ]
+  },
+  {
+    "id": "medientexte-analysieren",
+    "titel": "Medientexte analysieren",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Medienbeitrag)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Medientexte",
+      "Journalismus",
+      "W-Fragen"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Medientypen, Beitragssorten, Aufbau einer Nachricht und die 7 W-Fragen für die Analyse von Medienbeiträgen.",
+    "pfad": "bausteine/deutsch/medientexte-analysieren",
+    "pdf": "bausteine/deutsch/medientexte-analysieren/aufgabe.pdf",
+    "md": "bausteine/deutsch/medientexte-analysieren/aufgabe.md",
+    "vorschau": "bausteine/deutsch/medientexte-analysieren/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/medientexte-analysieren/vorschau-seite-1.jpg",
+      "bausteine/deutsch/medientexte-analysieren/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Tatsachenorientierte Beiträge",
+        "text": "Nachricht, Bericht, Meldung, Dokumentation, Interview, Reportage unterscheiden."
+      },
+      {
+        "titel": "Meinungsorientierte Beiträge",
+        "text": "Leitartikel, Kolumne, Kommentar, Glosse unterscheiden."
+      },
+      {
+        "titel": "Aufbau einer Nachricht",
+        "text": "Dachzeile, Schlagzeile, Lead, Nachrichtenkörper und Bildteil erkennen."
+      },
+      {
+        "titel": "7 W-Fragen",
+        "text": "Wer, was, wo, wann, wie, warum, welche Folgen - die Grundstruktur jedes Berichts."
+      }
+    ],
+    "quelle": "frei zusammengestellt mit Materialien aus Sprachwelten. Deutsch 1",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "mit-texten-arbeiten",
+    "titel": "Mit Texten arbeiten",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach gewähltem Auftrag)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Textnachbearbeitung",
+      "Auftragssammlung",
+      "Methode"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "16 Arbeitsaufträge zur Nachbearbeitung eines Textes - vom Glossar über den Lückentext bis zum Leserbrief.",
+    "pfad": "bausteine/deutsch/mit-texten-arbeiten",
+    "pdf": "bausteine/deutsch/mit-texten-arbeiten/aufgabe.pdf",
+    "md": "bausteine/deutsch/mit-texten-arbeiten/aufgabe.md",
+    "vorschau": "bausteine/deutsch/mit-texten-arbeiten/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/mit-texten-arbeiten/vorschau-seite-1.jpg",
+      "bausteine/deutsch/mit-texten-arbeiten/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Glossar erstellen",
+        "text": "Zentrale Begriffe alphabetisch geordnet aufschreiben und erklären."
+      },
+      {
+        "titel": "Fragen formulieren",
+        "text": "Verständnis- und weiterführende Fragen zum Text stellen."
+      },
+      {
+        "titel": "Lückentext",
+        "text": "Text in einen sinnvollen Lückentext umarbeiten."
+      },
+      {
+        "titel": "Fortsetzung/Vorgeschichte",
+        "text": "Zum Text eine Fortsetzung oder Vorgeschichte schreiben."
+      },
+      {
+        "titel": "Leserbrief",
+        "text": "Leserbrief mit eigener Stellungnahme zum Text schreiben."
+      },
+      {
+        "titel": "Steckbrief",
+        "text": "Steckbrief mit den W-Fragen zum Textinhalt erstellen."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "richtig-googeln",
+    "titel": "Richtig Googeln",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (als Nachschlagewerk)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Google",
+      "Suchoperatoren",
+      "Recherche"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Basis- und erweiterte Suchoperatoren, mit denen sich Google-Suchergebnisse gezielt eingrenzen lassen.",
+    "pfad": "bausteine/deutsch/richtig-googeln",
+    "pdf": "bausteine/deutsch/richtig-googeln/aufgabe.pdf",
+    "md": "bausteine/deutsch/richtig-googeln/aufgabe.md",
+    "vorschau": "bausteine/deutsch/richtig-googeln/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/richtig-googeln/vorschau-seite-1.jpg",
+      "bausteine/deutsch/richtig-googeln/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Basis-Operatoren",
+        "text": "Mit +, -, |, Anführungszeichen, * und .. gezielter suchen."
+      },
+      {
+        "titel": "Erweiterte Suchoperatoren",
+        "text": "Mit allintext, filetype, site, cache & Co. wie ein Profi recherchieren."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "satzproben-anwenden",
+    "titel": "Satzproben anwenden",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (als Nachschlagewerk)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Satzglieder",
+      "Grammatik",
+      "Satzproben"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Verschiebeprobe und Ersatzprobe als Werkzeuge, um Satzglieder sicher zu bestimmen.",
+    "pfad": "bausteine/deutsch/satzproben-anwenden",
+    "pdf": "bausteine/deutsch/satzproben-anwenden/aufgabe.pdf",
+    "md": "bausteine/deutsch/satzproben-anwenden/aufgabe.md",
+    "vorschau": "bausteine/deutsch/satzproben-anwenden/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/satzproben-anwenden/vorschau-seite-1.jpg",
+      "bausteine/deutsch/satzproben-anwenden/vorschau-seite-2.jpg"
+    ],
+    "material": "bausteine/deutsch/satzproben-anwenden/material.zip",
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Verschiebeprobe",
+        "text": "Wortgruppen verschieben, um zusammengehörige Satzglieder zu erkennen."
+      },
+      {
+        "titel": "Ersatzprobe",
+        "text": "Wortgruppen durch andere ersetzen, um Satzglieder zu bestätigen."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "texte-visualisieren",
+    "titel": "Texte visualisieren",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Text)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Visualisieren",
+      "MindMap",
+      "Lernstrategie"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Wie das Transformieren von Text in Grafiken (MindMap, Lernbild, ConceptMap) das Lernen und Behalten fördert.",
+    "pfad": "bausteine/deutsch/texte-visualisieren",
+    "pdf": "bausteine/deutsch/texte-visualisieren/aufgabe.pdf",
+    "md": "bausteine/deutsch/texte-visualisieren/aufgabe.md",
+    "vorschau": "bausteine/deutsch/texte-visualisieren/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/texte-visualisieren/vorschau-seite-1.jpg",
+      "bausteine/deutsch/texte-visualisieren/vorschau-seite-2.jpg"
+    ],
+    "material": "bausteine/deutsch/texte-visualisieren/material.zip",
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Texte als Input",
+        "text": "Textinhalt lesen und im Kopf verarbeiten."
+      },
+      {
+        "titel": "Grafiken als Output",
+        "text": "Verbalen Input in eine visuelle Form übertragen."
+      },
+      {
+        "titel": "Grundtypen von Lerngrafiken",
+        "text": "MindMap, Lernbild oder ConceptMap als Gestaltungsform wählen."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [],
+    "bausteineLinks": []
+  },
+  {
+    "id": "webseiten-pruefen",
+    "titel": "Webseiten prüfen",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Recherche)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Webseiten prüfen",
+      "Quellenkritik",
+      "Recherche"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Relevanz-, Sicherheits- und Qualitäts-Check, um Internetquellen zuverlässig zu bewerten.",
+    "pfad": "bausteine/deutsch/webseiten-pruefen",
+    "pdf": "bausteine/deutsch/webseiten-pruefen/aufgabe.pdf",
+    "md": "bausteine/deutsch/webseiten-pruefen/aufgabe.md",
+    "vorschau": "bausteine/deutsch/webseiten-pruefen/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/webseiten-pruefen/vorschau-seite-1.jpg",
+      "bausteine/deutsch/webseiten-pruefen/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Relevanz-Check",
+        "text": "Prüfen, ob die Webseite die eigene Fragestellung tatsächlich beantwortet."
+      },
+      {
+        "titel": "Sicherheits-Check",
+        "text": "Impressum und Urheberschaft der Seite prüfen."
+      },
+      {
+        "titel": "Qualitäts-Check",
+        "text": "Verbleibende Quellen nach Relevanz und Leserfreundlichkeit vergleichen."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [
+      "lesestrategien"
+    ],
+    "bausteineLinks": [
+      {
+        "id": "lesestrategien",
+        "titel": "Lesestrategien"
+      }
+    ]
+  },
+  {
+    "id": "zusammenfassen",
+    "titel": "Zusammenfassen",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Text)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Zusammenfassen",
+      "Kernaussagen",
+      "Stichworte"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Drei Verdichtungsgrade - Fliesstext, Kernaussagen und Stichworte - für unterschiedliche Lernzwecke.",
+    "pfad": "bausteine/deutsch/zusammenfassen",
+    "pdf": "bausteine/deutsch/zusammenfassen/aufgabe.pdf",
+    "md": "bausteine/deutsch/zusammenfassen/aufgabe.md",
+    "vorschau": "bausteine/deutsch/zusammenfassen/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/zusammenfassen/vorschau-seite-1.jpg",
+      "bausteine/deutsch/zusammenfassen/vorschau-seite-2.jpg"
+    ],
+    "material": "bausteine/deutsch/zusammenfassen/material.zip",
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Fliesstext",
+        "text": "Knappe, ganze Sätze, die auch ohne den Volltext verständlich sind."
+      },
+      {
+        "titel": "Kernaussagen",
+        "text": "Stichwort plus elliptischer Kurzsatz als Kompromiss zwischen Fliesstext und Stichwortliste."
+      },
+      {
+        "titel": "Stichworte",
+        "text": "Sehr knappe Einzelbegriffe für einfache Texte und als Repetitionshilfe."
+      }
+    ],
+    "quelle": "",
+    "bausteine": [
+      "informierendes-lesen"
+    ],
+    "bausteineLinks": [
+      {
+        "id": "informierendes-lesen",
+        "titel": "Informierendes Lesen"
+      }
+    ]
   }
 ]

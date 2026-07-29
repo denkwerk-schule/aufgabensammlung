@@ -239,8 +239,27 @@ def main():
         baustein_items = build_collection(
             bausteine_dir,
             bausteine_json,
-            extra_fields=["typ", "schritte", "quelle"],
+            extra_fields=["typ", "schritte", "quelle", "bausteine"],
         )
+
+        # Bausteine koennen auch untereinander auf sich verweisen (z.B.
+        # "Gruppenpuzzle" -> "Texte visualisieren"). Diese Verweise werden
+        # genau gleich wie bei den Lernfeldern zu bausteineLinks aufgeloest.
+        lookup = {b["id"]: b["titel"] for b in baustein_items}
+        resolved_bau_count = 0
+        for b in baustein_items:
+            links = [
+                {"id": slug, "titel": lookup[slug]}
+                for slug in (b.get("bausteine") or [])
+                if slug in lookup and slug != b["id"]
+            ]
+            b["bausteineLinks"] = links
+            if links:
+                resolved_bau_count += 1
+        with open(bausteine_json, "w", encoding="utf-8") as f:
+            json.dump(baustein_items, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        print(f"  bausteineLinks aufgeloest fuer {resolved_bau_count} Baustein(e).")
     else:
         print("(kein bausteine/-Ordner vorhanden, uebersprungen)")
 

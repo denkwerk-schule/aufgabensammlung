@@ -1,0 +1,35 @@
+---
+titel: "Beschreibungen"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Beschreibungsauftrag)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Sachtexte schreiben
+themen:
+  - Beschreibung
+  - Sachtext
+  - Methode
+typ: baustein
+beschreibung: "Fünf Schritte von der Beobachtung zum druckreifen Sach-, Personen- oder Bildbeschreibungstext."
+kompetenzen:
+  - Beobachten
+  - Sachlich formulieren
+  - Überarbeiten
+schritte:
+  - titel: "Vorbereiten"
+    text: "Genaue Beobachtung und Erstellen einer Stichwortliste mit treffenden Fachbegriffen."
+  - titel: "Strukturieren"
+    text: "Die gesammelten Begriffe nach einem Ordnungsprinzip in eine Reihenfolge bringen."
+  - titel: "Entwerfen"
+    text: "Ersten Textentwurf im Präsens schreiben, streng zwischen Fakten und Vermutungen trennen."
+  - titel: "Gliedern"
+    text: "Text mit Einleitung und Schluss zum vollständigen Dreiteiler ergänzen."
+  - titel: "Überarbeiten"
+    text: "Zweite Durchsicht anhand einer Checkliste (Gliederung, Präsens, Sprache, Rechtschreibung)."
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

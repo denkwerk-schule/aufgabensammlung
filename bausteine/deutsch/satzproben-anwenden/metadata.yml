@@ -1,0 +1,28 @@
+---
+titel: "Satzproben anwenden"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (als Nachschlagewerk)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Grammatik
+themen:
+  - Satzglieder
+  - Grammatik
+  - Satzproben
+typ: baustein
+beschreibung: "Verschiebeprobe und Ersatzprobe als Werkzeuge, um Satzglieder sicher zu bestimmen."
+kompetenzen:
+  - Grammatikverständnis
+  - Satzanalyse
+schritte:
+  - titel: "Verschiebeprobe"
+    text: "Wortgruppen verschieben, um zusammengehörige Satzglieder zu erkennen."
+  - titel: "Ersatzprobe"
+    text: "Wortgruppen durch andere ersetzen, um Satzglieder zu bestätigen."
+quelle: ""
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

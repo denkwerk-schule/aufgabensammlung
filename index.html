@@ -783,6 +783,9 @@
 
     const chips = (b.fach || []).map(f => `<span class="chip chip-bau">${f}</span>`).join('');
     const schritte = (b.schritte || []).map(s => `<span>${s.titel || s}</span>`).join('');
+    const bausteinLinks = (b.bausteineLinks || []).map(l =>
+      `<a class="baustein-link-chip" href="javascript:void(0)" onclick="event.stopPropagation();openLightbox('${l.id}','baustein')">${ICON_TOOL} ${l.titel}</a>`
+    ).join('');
 
     const pdfBtn = b.pdf
       ? `<a class="btn btn-bau-primary" href="${b.pdf}" download>${ICON_DOWNLOAD} PDF</a>`
@@ -802,6 +805,7 @@
           <h3>${b.titel}</h3>
           <p class="desc">${b.beschreibung || ''}</p>
           <div class="schritte-list">${schritte}</div>
+          ${bausteinLinks ? `<div class="baustein-links">${bausteinLinks}</div>` : ''}
           <div class="meta">
             <span>${ICON_LEVEL} ${b.stufe || '-'}</span>
             <span>${ICON_CLOCK} ${b.zeitbedarf || '-'}</span>
