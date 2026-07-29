@@ -19,6 +19,9 @@
     --blue-500:#3b82f6;
     --blue-600:#2563eb;
     --blue-700:#1d4ed8;
+    --teal-500:#14b8a6;
+    --teal-600:#0d9488;
+    --teal-700:#0f766e;
   }
 
   *{box-sizing:border-box;}
@@ -443,6 +446,72 @@
     color:var(--ink-soft);
     font-weight:650;
   }
+
+  /* ---------- Baustein-Karten (dritter Akzent: petrol/teal) ---------- */
+  .card.baustein-card .card-thumb{background:linear-gradient(135deg,#5eead4,#2dd4bf);}
+  .chip-bau{
+    background:rgba(20,184,166,0.14);
+    color:var(--teal-700);
+  }
+  .btn-bau-primary{
+    color:var(--teal-700);
+    border-color:rgba(13,148,136,0.24);
+  }
+  .btn-bau-primary:hover{
+    background:rgba(20,184,166,0.12);
+    border-color:rgba(13,148,136,0.42);
+  }
+  .schritte-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-bottom:14px;
+  }
+  .schritte-list span{
+    font-size:0.74rem;
+    font-weight:600;
+    padding:4px 10px;
+    border-radius:999px;
+    background:rgba(20,184,166,0.09);
+    color:var(--teal-700);
+  }
+  .quelle-row{
+    margin-top:4px;
+    padding-top:14px;
+    border-top:1px solid rgba(0,0,0,0.06);
+    font-size:0.78rem;
+    color:var(--ink-faint);
+  }
+  .quelle-row strong{
+    color:var(--ink-soft);
+    font-weight:650;
+  }
+
+  /* ---------- Cross-Link-Chips (Lernfeld -> Baustein) ---------- */
+  .baustein-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin:2px 0 14px;
+  }
+  .baustein-link-chip{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    font-size:0.74rem;
+    font-weight:650;
+    padding:5px 11px 5px 9px;
+    border-radius:999px;
+    background:rgba(20,184,166,0.12);
+    color:var(--teal-700);
+    border:1px solid rgba(13,148,136,0.2);
+    cursor:pointer;
+    text-decoration:none;
+    transition:background .15s, transform .1s;
+  }
+  .baustein-link-chip:hover{background:rgba(20,184,166,0.2);}
+  .baustein-link-chip:active{transform:scale(0.96);}
+  .baustein-link-chip svg{flex-shrink:0;}
 </style>
 </head>
 <body>
@@ -467,6 +536,7 @@
             <option value="">Alles</option>
             <option value="denkaufgaben">Denkaufgaben</option>
             <option value="lernfelder">Lernfelder</option>
+            <option value="bausteine">Bausteine</option>
           </select>
         </div>
         <div class="filter-field">
@@ -526,6 +596,17 @@
       <div id="lernfeldGrid" class="grid"></div>
     </div>
 
+    <div id="bausteinSection" style="display:none;">
+      <div class="section-heading">
+        <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:4px;"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg>Bausteine</h2>
+        <p>Wiederverwendbare Methoden- und Strategiekarten für den Kompetenzaufbau</p>
+      </div>
+
+      <p class="result-count" id="resultCountBau"></p>
+
+      <div id="bausteinGrid" class="grid"></div>
+    </div>
+
   </div>
 
   <footer>
@@ -564,6 +645,7 @@
 
   let allTasks = [];
   let allLernfelder = [];
+  let allBausteine = [];
 
   const ICON_DOWNLOAD = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4.5 21h15"/></svg>';
   const ICON_DOC = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>';
@@ -571,6 +653,7 @@
   const ICON_LEVEL = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 4 2 10l10 6 10-6z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>';
   const ICON_CLOCK = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>';
   const ICON_TARGET = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.5"/></svg>';
+  const ICON_TOOL = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg>';
 
   async function loadTasks() {
     try {
@@ -595,8 +678,18 @@
     }
   }
 
+  async function loadBausteine() {
+    try {
+      const res = await fetch('bausteine.json', { cache: 'no-store' });
+      if (!res.ok) return;
+      allBausteine = await res.json();
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
   function populateFilterOptions() {
-    const faecher = [...new Set([...allTasks, ...allLernfelder].flatMap(t => t.fach || []))].sort();
+    const faecher = [...new Set([...allTasks, ...allLernfelder, ...allBausteine].flatMap(t => t.fach || []))].sort();
     const fachSelect = document.getElementById('filterFach');
     faecher.forEach(f => {
       const opt = document.createElement('option');
@@ -649,6 +742,9 @@
     const chips = (lf.fach || []).map(f => `<span class="chip chip-lf">${f}</span>`).join('');
     const moeglichkeiten = (lf.moeglichkeiten || []).map(m => `<span>${m}</span>`).join('');
     const anschluss = (lf.anschluss || []).join(' · ');
+    const bausteinLinks = (lf.bausteineLinks || []).map(b =>
+      `<a class="baustein-link-chip" href="javascript:void(0)" onclick="event.stopPropagation();openLightbox('${b.id}','baustein')">${ICON_TOOL} ${b.titel}</a>`
+    ).join('');
 
     const pdfBtn = lf.pdf
       ? `<a class="btn btn-lf-primary" href="${lf.pdf}" download>${ICON_DOWNLOAD} PDF</a>`
@@ -662,12 +758,13 @@
 
     return `
       <div class="card lernfeld-card glass">
-        <div class="card-thumb" onclick="openLightbox('${lf.id}', true)" title="Grosse Vorschau ansehen">${thumb}</div>
+        <div class="card-thumb" onclick="openLightbox('${lf.id}','lernfeld')" title="Grosse Vorschau ansehen">${thumb}</div>
         <div class="card-body">
           <div class="chips">${chips}</div>
           <h3>${lf.titel}</h3>
           <p class="desc">${lf.beschreibung || ''}</p>
           <div class="moeglichkeiten-list">${moeglichkeiten}</div>
+          ${bausteinLinks ? `<div class="baustein-links">${bausteinLinks}</div>` : ''}
           <div class="meta">
             <span>${ICON_LEVEL} ${lf.stufe || '-'}</span>
             <span>${ICON_CLOCK} ${lf.zeitbedarf || '-'}</span>
@@ -678,9 +775,49 @@
       </div>`;
   }
 
-  function openLightbox(id, isLernfeld) {
-    const task = (isLernfeld ? allLernfelder : allTasks).find(t => t.id === id);
+  function bausteinCardHtml(b) {
+    const icon = FACH_ICONS[(b.fach || [])[0]] || ICON_TOOL;
+    const thumb = b.vorschau
+      ? `<img src="${b.vorschau}" alt="Vorschau: ${b.titel}" loading="lazy">`
+      : `<div class="fallback-icon">${icon}</div>`;
+
+    const chips = (b.fach || []).map(f => `<span class="chip chip-bau">${f}</span>`).join('');
+    const schritte = (b.schritte || []).map(s => `<span>${s.titel || s}</span>`).join('');
+
+    const pdfBtn = b.pdf
+      ? `<a class="btn btn-bau-primary" href="${b.pdf}" download>${ICON_DOWNLOAD} PDF</a>`
+      : '';
+    const mdBtn = b.md
+      ? `<a class="btn btn-secondary" href="${b.md}" download>${ICON_DOC} Markdown</a>`
+      : '';
+    const materialBtn = b.material
+      ? `<a class="btn btn-secondary" href="${b.material}" download title="Markdown + Bilder als ZIP">${ICON_ZIP} Bilder</a>`
+      : '';
+
+    return `
+      <div class="card baustein-card glass">
+        <div class="card-thumb" onclick="openLightbox('${b.id}','baustein')" title="Grosse Vorschau ansehen">${thumb}</div>
+        <div class="card-body">
+          <div class="chips">${chips}</div>
+          <h3>${b.titel}</h3>
+          <p class="desc">${b.beschreibung || ''}</p>
+          <div class="schritte-list">${schritte}</div>
+          <div class="meta">
+            <span>${ICON_LEVEL} ${b.stufe || '-'}</span>
+            <span>${ICON_CLOCK} ${b.zeitbedarf || '-'}</span>
+          </div>
+          <div class="card-actions">${pdfBtn}${mdBtn}${materialBtn}</div>
+          ${b.quelle ? `<div class="quelle-row"><strong>Quelle:</strong> ${b.quelle}</div>` : ''}
+        </div>
+      </div>`;
+  }
+
+  function openLightbox(id, typ) {
+    const collection = typ === 'lernfeld' ? allLernfelder : typ === 'baustein' ? allBausteine : allTasks;
+    const task = collection.find(t => t.id === id);
     if (!task) return;
+
+    const btnClass = typ === 'lernfeld' ? 'btn-lf-primary' : typ === 'baustein' ? 'btn-bau-primary' : 'btn-primary';
 
     document.getElementById('lightboxTitel').textContent = task.titel;
     document.getElementById('lightboxMeta').textContent =
@@ -693,7 +830,7 @@
       ? pages.map((src, i) => `<img src="${src}" alt="${task.titel} - Seite ${i + 1}" loading="lazy">`).join('')
       : '<p style="color:var(--ink-faint);">Keine Vorschau verfügbar.</p>';
 
-    const pdfBtn = task.pdf ? `<a class="btn btn-primary" href="${task.pdf}" download>${ICON_DOWNLOAD} PDF herunterladen</a>` : '';
+    const pdfBtn = task.pdf ? `<a class="btn ${btnClass}" href="${task.pdf}" download>${ICON_DOWNLOAD} PDF herunterladen</a>` : '';
     const mdBtn = task.md ? `<a class="btn btn-secondary" href="${task.md}" download>${ICON_DOC} Markdown herunterladen</a>` : '';
     const materialBtn = task.material ? `<a class="btn btn-secondary" href="${task.material}" download title="Markdown + Bilder als ZIP">${ICON_ZIP} Bilder-Paket (ZIP)</a>` : '';
     document.getElementById('lightboxActions').innerHTML = pdfBtn + mdBtn + materialBtn;
@@ -732,8 +869,9 @@
     const fach = document.getElementById('filterFach').value;
     const zeit = document.getElementById('filterZeit').value;
 
-    const showTasks = typ !== 'lernfelder';
-    const showLernfelder = typ !== 'denkaufgaben';
+    const showTasks = typ === '' || typ === 'denkaufgaben';
+    const showLernfelder = typ === '' || typ === 'lernfelder';
+    const showBausteine = typ === '' || typ === 'bausteine';
 
     let filteredTasks = showTasks ? allTasks : [];
     if (fach) filteredTasks = filteredTasks.filter(t => (t.fach || []).includes(fach));
@@ -743,8 +881,13 @@
     if (fach) filteredLernfelder = filteredLernfelder.filter(t => (t.fach || []).includes(fach));
     filteredLernfelder = applyZeitFilter(filteredLernfelder, zeit);
 
+    let filteredBausteine = showBausteine ? allBausteine : [];
+    if (fach) filteredBausteine = filteredBausteine.filter(t => (t.fach || []).includes(fach));
+    filteredBausteine = applyZeitFilter(filteredBausteine, zeit);
+
     const taskSection = document.getElementById('taskSection');
     const lernfeldSection = document.getElementById('lernfeldSection');
+    const bausteinSection = document.getElementById('bausteinSection');
     const empty = document.getElementById('stateEmpty');
 
     const taskGrid = document.getElementById('taskGrid');
@@ -771,7 +914,21 @@
       lernfeldSection.style.display = 'none';
     }
 
-    const totalShown = (showTasks ? filteredTasks.length : 0) + (showLernfelder ? filteredLernfelder.length : 0);
+    const bausteinGrid = document.getElementById('bausteinGrid');
+    const resultCountBau = document.getElementById('resultCountBau');
+    if (showBausteine && allBausteine.length > 0) {
+      bausteinSection.style.display = 'block';
+      resultCountBau.textContent = filteredBausteine.length === allBausteine.length
+        ? `${allBausteine.length} Baustein${allBausteine.length === 1 ? '' : 'e'}`
+        : `${filteredBausteine.length} von ${allBausteine.length} Bausteinen`;
+      bausteinGrid.innerHTML = filteredBausteine.map(bausteinCardHtml).join('');
+    } else {
+      bausteinSection.style.display = 'none';
+    }
+
+    const totalShown = (showTasks ? filteredTasks.length : 0)
+      + (showLernfelder ? filteredLernfelder.length : 0)
+      + (showBausteine ? filteredBausteine.length : 0);
     empty.style.display = totalShown === 0 ? 'block' : 'none';
   }
 
@@ -787,7 +944,7 @@
   document.getElementById('filterZeit').addEventListener('change', applyFilters);
 
   (async function init() {
-    const results = await Promise.allSettled([loadTasks(), loadLernfelder()]);
+    const results = await Promise.allSettled([loadTasks(), loadLernfelder(), loadBausteine()]);
     document.getElementById('stateLoading').style.display = 'none';
     if (results[0].status === 'rejected') return;
     populateFilterOptions();

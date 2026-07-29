@@ -39,7 +39,9 @@
       "Influencer",
       "Die Welt in 20 Jahren",
       "Extreme Leistungen"
-    ]
+    ],
+    "bausteine": [],
+    "bausteineLinks": []
   },
   {
     "id": "hoerspiele",
@@ -81,6 +83,15 @@
       "Podcast",
       "Drama",
       "Romeo und Julia"
+    ],
+    "bausteine": [
+      "hoerstrategien"
+    ],
+    "bausteineLinks": [
+      {
+        "id": "hoerstrategien",
+        "titel": "Hörstrategien"
+      }
     ]
   },
   {
@@ -124,6 +135,15 @@
       "Zeitungen und Co.",
       "Schräge Typen",
       "Tagebuch und Co."
+    ],
+    "bausteine": [
+      "hoerstrategien"
+    ],
+    "bausteineLinks": [
+      {
+        "id": "hoerstrategien",
+        "titel": "Hörstrategien"
+      }
     ]
   },
   {
@@ -167,7 +187,9 @@
       "Leichte Sprache",
       "Ver-dichtete Worte",
       "Zeitung und Co."
-    ]
+    ],
+    "bausteine": [],
+    "bausteineLinks": []
   },
   {
     "id": "leichte-sprache",
@@ -212,7 +234,9 @@
       "Modul Grammatik",
       "Modul Zeitung",
       "Lernfeld Leben mit einer Behinderung"
-    ]
+    ],
+    "bausteine": [],
+    "bausteineLinks": []
   },
   {
     "id": "podcast-und-co",
@@ -253,7 +277,9 @@
       "Lernfeld Zeitung",
       "Lernfeld Hörspiel",
       "Lernfeld Tagebuch, Blog & Co."
-    ]
+    ],
+    "bausteine": [],
+    "bausteineLinks": []
   },
   {
     "id": "schlaue-koepfe",
@@ -295,7 +321,9 @@
       "Schräge Typen",
       "Kurzgeschichten",
       "Leben mit Behinderung"
-    ]
+    ],
+    "bausteine": [],
+    "bausteineLinks": []
   },
   {
     "id": "schraege-typen",
@@ -337,6 +365,15 @@
       "Kluge Köpfe",
       "Leben mit einer Behinderung",
       "Extreme Leistungen"
+    ],
+    "bausteine": [
+      "hoerstrategien"
+    ],
+    "bausteineLinks": [
+      {
+        "id": "hoerstrategien",
+        "titel": "Hörstrategien"
+      }
     ]
   },
   {
@@ -380,7 +417,9 @@
     ],
     "anschluss": [
       "Lyrik"
-    ]
+    ],
+    "bausteine": [],
+    "bausteineLinks": []
   },
   {
     "id": "ver-dichtete-worte",
@@ -424,6 +463,8 @@
       "Lernfeld Podcast",
       "Lernfeld Drama",
       "Lernfeld Kreatives Schreiben"
-    ]
+    ],
+    "bausteine": [],
+    "bausteineLinks": []
   }
 ]

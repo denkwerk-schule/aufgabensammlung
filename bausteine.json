@@ -1,0 +1,51 @@
+[
+  {
+    "id": "hoerstrategien",
+    "titel": "Hörstrategien",
+    "fach": [
+      "Deutsch"
+    ],
+    "stufe": "Sek 1",
+    "niveau": "alle Niveaus (eigenständige Vertiefung)",
+    "zeitbedarf": "situativ (je nach Hörtext)",
+    "zeitMinuten": 0,
+    "regionalbezug": "Schweiz",
+    "themen": [
+      "Hörverstehen",
+      "Hörstrategien",
+      "Methode"
+    ],
+    "aufgabentyp": "",
+    "offenheitsgrad": "",
+    "beschreibung": "Vier Schritte, um auch längere Hörtexte souverän zu verstehen: Begegnen, Zuhören, Verarbeiten, Überprüfen.",
+    "pfad": "bausteine/deutsch/hoerstrategien",
+    "pdf": "bausteine/deutsch/hoerstrategien/aufgabe.pdf",
+    "md": "bausteine/deutsch/hoerstrategien/aufgabe.md",
+    "vorschau": "bausteine/deutsch/hoerstrategien/vorschau.jpg",
+    "vorschauSeiten": [
+      "bausteine/deutsch/hoerstrategien/vorschau-seite-1.jpg",
+      "bausteine/deutsch/hoerstrategien/vorschau-seite-2.jpg"
+    ],
+    "material": null,
+    "typ": "baustein",
+    "schritte": [
+      {
+        "titel": "Begegnen",
+        "text": "Hör dir den Hörtext ein erstes Mal an, kläre das Hauptthema und formuliere eigene Fragen."
+      },
+      {
+        "titel": "Zuhören",
+        "text": "Hör dir den Hörtext ein zweites Mal an und achte dabei gezielt auf deine und die vorgegebenen Fragen."
+      },
+      {
+        "titel": "Verarbeiten",
+        "text": "Stelle den Inhalt des Hörtextes bildlich oder grafisch dar (Mindmap, Tabelle, Zeitstrahl, Skizze)."
+      },
+      {
+        "titel": "Überprüfen",
+        "text": "Überprüft zu zweit, ob ihr den Inhalt richtig verstanden habt, und vergleicht eure Ergebnisse."
+      }
+    ],
+    "quelle": "Die Sprachstarken 7-9, Klett und Balmer AG, Baar 2016"
+  }
+]

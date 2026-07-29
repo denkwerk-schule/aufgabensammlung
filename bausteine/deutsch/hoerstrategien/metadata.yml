@@ -1,0 +1,32 @@
+---
+titel: "Hörstrategien"
+fach:
+  - Deutsch
+stufe: Sek 1
+niveau: alle Niveaus (eigenständige Vertiefung)
+zeitbedarf: situativ (je nach Hörtext)
+regionalbezug: Schweiz
+kontext: Baustein für den eigenständigen Kompetenzaufbau, Hörverstehen
+themen:
+  - Hörverstehen
+  - Hörstrategien
+  - Methode
+typ: baustein
+beschreibung: "Vier Schritte, um auch längere Hörtexte souverän zu verstehen: Begegnen, Zuhören, Verarbeiten, Überprüfen."
+kompetenzen:
+  - Hörverstehen
+  - Selbstorganisation
+schritte:
+  - titel: "Begegnen"
+    text: "Hör dir den Hörtext ein erstes Mal an, kläre das Hauptthema und formuliere eigene Fragen."
+  - titel: "Zuhören"
+    text: "Hör dir den Hörtext ein zweites Mal an und achte dabei gezielt auf deine und die vorgegebenen Fragen."
+  - titel: "Verarbeiten"
+    text: "Stelle den Inhalt des Hörtextes bildlich oder grafisch dar (Mindmap, Tabelle, Zeitstrahl, Skizze)."
+  - titel: "Überprüfen"
+    text: "Überprüft zu zweit, ob ihr den Inhalt richtig verstanden habt, und vergleicht eure Ergebnisse."
+quelle: "Die Sprachstarken 7-9, Klett und Balmer AG, Baar 2016"
+autor: David Halser
+lizenz: CC-BY-SA
+quelle_pdf: aufgabe.pdf
+---

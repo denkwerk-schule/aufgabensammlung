@@ -213,7 +213,7 @@ def build_collection(source_dir: Path, output_file: Path, extra_fields=None):
             "material": f"{rel_path}/{material}" if material else None,
         }
         for key in extra_fields:
-            item[key] = data.get(key, [] if key in ("moeglichkeiten", "anschluss") else "")
+            item[key] = data.get(key, [] if key in ("moeglichkeiten", "anschluss", "bausteine", "schritte") else "")
 
         items.append(item)
 
@@ -231,14 +231,49 @@ def main():
     print("=== Aufgaben ===")
     build_collection(ROOT / "aufgaben", ROOT / "tasks.json")
 
+    print("\n=== Bausteine ===")
+    bausteine_dir = ROOT / "bausteine"
+    bausteine_json = ROOT / "bausteine.json"
+    baustein_items = []
+    if bausteine_dir.exists():
+        baustein_items = build_collection(
+            bausteine_dir,
+            bausteine_json,
+            extra_fields=["typ", "schritte", "quelle"],
+        )
+    else:
+        print("(kein bausteine/-Ordner vorhanden, uebersprungen)")
+
     print("\n=== Lernfelder ===")
     lernfelder_dir = ROOT / "lernfelder"
+    lernfelder_json = ROOT / "lernfelder.json"
     if lernfelder_dir.exists():
-        build_collection(
+        lernfeld_items = build_collection(
             lernfelder_dir,
-            ROOT / "lernfelder.json",
-            extra_fields=["typ", "moeglichkeiten", "anschluss"],
+            lernfelder_json,
+            extra_fields=["typ", "moeglichkeiten", "anschluss", "bausteine"],
         )
+
+        # Verweise wie "bausteine: [hoerstrategien]" in den Lernfeld-Metadaten
+        # zu klickbaren Links aufloesen (nur fuer Bausteine, die tatsaechlich
+        # existieren - fehlende Verweise werden stillschweigend ausgelassen,
+        # damit noch nicht erstellte Bausteine die Seite nicht zerstoeren).
+        if baustein_items:
+            lookup = {b["id"]: b["titel"] for b in baustein_items}
+            resolved_count = 0
+            for lf in lernfeld_items:
+                links = [
+                    {"id": slug, "titel": lookup[slug]}
+                    for slug in (lf.get("bausteine") or [])
+                    if slug in lookup
+                ]
+                lf["bausteineLinks"] = links
+                if links:
+                    resolved_count += 1
+            with open(lernfelder_json, "w", encoding="utf-8") as f:
+                json.dump(lernfeld_items, f, ensure_ascii=False, indent=2)
+                f.write("\n")
+            print(f"  bausteineLinks aufgeloest fuer {resolved_count} Lernfeld(er).")
     else:
         print("(kein lernfelder/-Ordner vorhanden, uebersprungen)")
 
